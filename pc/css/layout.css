@@ -1,0 +1,112 @@
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Noto Sans KR'),
+        url('./webfont/NotoSans-Light.woff2') format("woff2");
+}
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 350;
+    src: local('Noto Sans KR'),
+        url('./webfont/NotoSans-DemiLight.woff2') format("woff2");
+}
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Noto Sans KR'),
+        url('./webfont/NotoSans-Regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'Noto Sans KR';
+    src: url('./webfont/NotoSans-Medium.woff2') format('woff2'),
+         url('./webfont/NotoSans-Medium.woff') format('woff');
+    font-style: normal;
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Noto Sans KR';
+    src: url('./webfont/NotoSans-Bold.woff2') format('woff2'),
+         url('./webfont/NotoSans-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+
+.hdtext{display:inline-block;width:0;height:0;overflow:hidden;line-height:0;color:transparent;position:absolute;top:0;left:-99999px;}
+html.smooth {scroll-behavior: smooth;}
+.page_wrap{min-width:1280px;font-family: 'Noto Sans KR';position:relative;}
+
+
+/* layout */
+.front_body{overflow-x:hidden;position:relative;}
+.page_wrap{}
+.page_wrap.main_page{}
+.page_wrap.main_page .header_zone{}
+.header_zone{}
+.toplogo{}
+.toplogo_link{}
+.toplogo_link img{}
+.top_main_wrap{}
+.top_gnb_list{}
+.top_gnb_list > li{}
+.top_gnb_list > li:last-of-type{}
+.gnb_one_menu{}
+.two_menu_list_wrap{}
+.two_menu_list{}
+.two_menu_list > li{}
+.two_menu_list > li:last-of-type{}
+.gnb_two_menu{}
+.top_util_wrap{}
+.head_util_list{}
+.head_util_list > li{}
+.head_util_list > li:last-of-type{}
+.util_box{}
+.util_box:before{}
+.util_text_item{}
+.util_text_item[class^="ico_"]{}
+.util_text_item[class^="ico_"]:before{}
+.util_text_item.ico_men:before{}
+
+.middle_zone{}
+.floating_layer{}
+.floating_items{}
+.btn_pagetop{}
+.btn_pagetop:after{}
+.floaging_sns_list{}
+.floaging_sns_list > li{}
+.floaging_sns_list > li:last-of-type{}
+.sns_quick{}
+.sns_quick.kakao{}
+
+.footer_zone{}
+.footer_else_low{}
+.footer_else_pixin{}
+.footer_else_label{}
+.footer_sns_list{}
+.footer_sns_list > li{}
+.footer_sns_list > li:last-of-type{}
+.sns_item{}
+.sns_item.sns_kakao{}
+.sns_item.sns_blog{}
+.sns_item.sns_insta{}
+.footer_main_low{}
+.footer_main_pixin{}
+.footer_menu_list{}
+.footer_menu_list > li{}
+.footer_menu_list > li:after{}
+.footer_menu_list > li:last-of-type{}
+.footer_menu_list > li:last-of-type:after{}
+.footer_menu{}
+.footer_main_logo_row{}
+.footer_main_logo{}
+.footer_main_logo img{}
+.footer_copyitem_list_wrap{}
+.footer_copyitem_list{}
+.footer_copyitem_list > li{}
+.footer_copyitem_list > li:last-of-type{}
+.footer_copyitem{}
+.footer_copyright{}
