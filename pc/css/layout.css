@@ -46,10 +46,17 @@ html.smooth {scroll-behavior: smooth;}
 .page_wrap{}
 .page_wrap.main_page{}
 .page_wrap.main_page .header_zone{}
+.page_wrap.main_page .toplogo{}
 .header_zone{}
+.bg_gnb{}
+.header_zone.hover_active{}
+.header_zone.hover_active .toplogo{}
+.header_zone.hover_active .gnb_one_menu{}
+.header_zone.hover_active .util_text_item{}
+.header_zone.hover_active .util_text_item.ico_men:before{}
+.page_wrap.main_page .toplogo{}
 .toplogo{}
 .toplogo_link{}
-.toplogo_link img{}
 .top_main_wrap{}
 .top_gnb_list{}
 .top_gnb_list > li{}
