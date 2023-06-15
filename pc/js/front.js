@@ -111,6 +111,8 @@ function mainVisual(){
 	const mv_wrap = document.querySelector(".mv_wrap");
 	const mv_slide = mv_wrap.querySelectorAll(".swiper-slide");
 
+	
+
 	heightControl();
 
 	if(mv_slide.length>1){
@@ -142,6 +144,14 @@ function mainVisual(){
 	function heightControl(){
 		let windowHeight = window.innerHeight;
 		let controlHeight = 0;
+		// 퍼블확인용
+		let url = window.location.href.split('?')[1];
+		let url_2 = url !== undefined ? url.split('#')[0] : null;
+		if(url_2 === "case02"){
+			mv_wrap.style.height = "650px";
+			return;
+		}
+
 		if(windowHeight<700){
 			controlHeight = 700;
 		}else{

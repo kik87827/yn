@@ -5,8 +5,8 @@
 .swiper-container.mv_container{height:100%;position:relative}
 .swiper-container.mv_container:before,
 .swiper-container.mv_container:after{display:block;content:'';position:absolute;left:0;background-repeat:repeat-x;height:50%;width:100%;z-index:5;}
-.swiper-container.mv_container:before{top:0;background-image:url("../images/shadow_mvtop.png");background-position:0 0;}
-.swiper-container.mv_container:after{bottom:0;background-image:url("../images/shadow_mvbottom.png");background-position:0 100%;}
+.swiper-container.mv_container:before{top:-20px;background-image:url("../images/shadow_mvtop.png");background-position:0 0;}
+.swiper-container.mv_container:after{bottom:-20px;background-image:url("../images/shadow_mvbottom.png");background-position:0 100%;}
 .swiper-container.mv_container .swiper-wrapper{}
 .swiper-container.mv_container .swiper-slide{}
 .mv_item{display:flex; align-items: center; justify-content:center; background-position:50% 50%;background-repeat:no-repeat;background-size:cover;height:100%;}
