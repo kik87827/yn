@@ -99,22 +99,22 @@
 				<div class="swiper-container mv_container">
 					<div class="swiper-wrapper">
 						<div class="swiper-slide">
-							<a href="#" class="mv_item">
+							<div class="mv_item">
 								<img src="./images/mv_01.png" class="bg" alt="">
 								<div class="mv_copy"><img src="./images/mv_01_copy.png" class="copy" alt=""></div>
-							</a>
+							</div>
 						</div>
 						<div class="swiper-slide">
-							<a href="#" class="mv_item">
+							<div class="mv_item">
 								<img src="./images/mv_02.png" class="bg" alt="">
 								<div class="mv_copy"><img src="./images/mv_02_copy.png" class="copy" alt=""></div>
-							</a>
+							</div>
 						</div>
 						<div class="swiper-slide">
-							<a href="#" class="mv_item">
+							<div class="mv_item">
 								<img src="./images/mv_03.png" class="bg" alt="">
 								<div class="mv_copy"><img src="./images/mv_03_copy.png" class="copy" alt=""></div>
-							</a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -141,7 +141,107 @@
                 <!-- // mv_form_wrap -->
 			</div>
 			<div class="mc_wrap">
-				내용이 들어갑니다.
+				<div class="mc_row mc_category">
+					<ul class="mc_category_list">
+						<li><a href="#" class="mc_category_item active">일본</a></li>
+						<li><a href="#" class="mc_category_item">동남아</a></li>
+						<li><a href="#" class="mc_category_item">중국/몽골</a></li>
+						<li><a href="#" class="mc_category_item">대양주</a></li>
+						<li><a href="#" class="mc_category_item">골프투어</a></li>
+						<li><a href="#" class="mc_category_item">인천출발</a></li>
+					</ul>
+				</div>
+				<div class="mc_row mc_tc">
+					<div class="mc_vitem_title_row">
+						<div class="mc_vitem_title">
+							<span class="mc_vitem_title_wp">영남세계일주</span>
+							<span class="mc_vitem_title_wp has_highlight"><span class="highlight">추천상품</span></span>
+						</div>
+					</div>
+					<div class="swiper-container mc_card_container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<a href="#" class="mc_thumbanner">
+									<div class="thum_rows">
+										<img src="./images/temp_640x400.png" alt="">
+									</div>
+									<div class="spec_rows">
+										<div class="spec_keyword_wrap">
+											<span class="spec_keyword">#일본</span>
+											<span class="spec_keyword">#패키지</span>
+											<span class="spec_keyword">#인천출발</span>
+											<span class="spec_keyword">#일본</span>
+											<span class="spec_keyword">#패키지</span>
+											<span class="spec_keyword">#인천출발</span>
+											<span class="spec_keyword">#일본</span>
+											<span class="spec_keyword">#패키지</span>
+											<span class="spec_keyword">#인천출발</span>
+										</div>
+										<div class="spec_copy_wrap">
+											<div class="spec_copy_main">후쿠오카 2박3일 에어텔, 블라썸 프리미어</div>
+											<div class="spec_copy_sub">2인출발 가능한 여행 함께 떠나는 여행</div>
+										</div>
+										<div class="spec_price_wrap">
+											<div class="price_num_group">
+												<span class="price_num_value">1,290,000</span>
+												<span class="price_num_unit">원~</span>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="mc_thumbanner">
+									<div class="thum_rows">
+										<img src="./images/temp_640x400_2.png" alt="">
+									</div>
+									<div class="spec_rows">
+										<div class="spec_keyword_wrap">
+											<span class="spec_keyword">#일본</span>
+											<span class="spec_keyword">#패키지</span>
+											<span class="spec_keyword">#인천출발</span>
+										</div>
+										<div class="spec_copy_wrap">
+											<div class="spec_copy_main">후쿠오카 2박3일 에어텔, 블라썸 프리미어</div>
+											<div class="spec_copy_sub">2인출발 가능한 여행 함께 떠나는 여행</div>
+										</div>
+										<div class="spec_price_wrap">
+											<div class="price_num_group">
+												<span class="price_num_value">1,290,000</span>
+												<span class="price_num_unit">원</span>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="mc_thumbanner">
+									<div class="thum_rows">
+										<img src="./images/temp_640x400_3.png" alt="">
+									</div>
+									<div class="spec_rows">
+										<div class="spec_keyword_wrap">
+											<span class="spec_keyword">#일본</span>
+											<span class="spec_keyword">#패키지</span>
+											<span class="spec_keyword">#인천출발</span>
+										</div>
+										<div class="spec_copy_wrap">
+											<div class="spec_copy_main">후쿠오카 2박3일 에어텔, 블라썸 프리미어</div>
+											<div class="spec_copy_sub">2인출발 가능한 여행 함께 떠나는 여행</div>
+										</div>
+										<div class="spec_price_wrap">
+											<div class="price_num_group">
+												<span class="price_num_value">1,290,000</span>
+												<span class="price_num_unit">원</span>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="swiper-pagination mc-pagination"></div>
+					</div>
+				</div>
 			</div>
 		</section>
 		<!-- // middle -->
@@ -202,6 +302,8 @@
 					e.preventDefault();
 					document.querySelector("#btn_mc_date .mv_form_text").textContent = document.querySelector("#modal_date").getAttribute("data-date");
 				});
+
+				mcProFunc01();
 			});
 			$(function(){
                 var start_date_div = $("#start_date_div");

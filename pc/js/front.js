@@ -270,7 +270,7 @@ function posLayerHide(target){
 }
 
 
-var mc_recommand_obj = null;
+var mc_swiper_obj = null;
 function mc_swiper_func(){
 	const recommend_vitem = document.querySelector(".recommend_vitem");
 	const mc_multi_swiper = recommend_vitem.querySelector(".mc_multi_swiper");
@@ -284,7 +284,7 @@ function mc_swiper_func(){
 	// 	});
 	// }
 	if(mc_multi_slide.length>3){
-		mc_recommand_obj = new Swiper('.recommend_vitem .mc_multi_swiper', { 
+		mc_swiper_obj = new Swiper('.recommend_vitem .mc_multi_swiper', { 
 			speed : 1000, 
 			slidesPerView: 3, 
 			slidesPerGroup: 3, 
@@ -296,6 +296,27 @@ function mc_swiper_func(){
 		})
 	}else{
 		mc_multi_swiper.classList.add("nodata_type");
+	}
+}
+
+var mc_swiper2_obj = null;
+function mc_swiper2_func(){
+	const banner_vitem = document.querySelector(".banner_vitem");
+	const mc_multi_swiper2 = banner_vitem.querySelector(".mc_multi_swiper2");
+	const mc_multi_slide = mc_multi_swiper2.querySelectorAll(".swiper-slide");
+	if(mc_multi_slide.length>3){
+		mc_swiper2_obj = new Swiper('.banner_vitem .mc_multi_swiper2', { 
+			speed : 1000, 
+			slidesPerView: 4, 
+			slidesPerGroup: 4, 
+			loop : true, 
+			pagination: {  
+				el: ".banner_vitem .mc_paging",
+				clickable: true
+			}
+		})
+	}else{
+		mc_multi_swiper2.classList.add("nodata_type");
 	}
 }
 

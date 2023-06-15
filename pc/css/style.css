@@ -83,6 +83,7 @@ input.mv_form_input::input-placeholder{color:#fff;}
 .swiper-container.mc_multi_swiper2 .swiper-wrapper{}
 .swiper-container.mc_multi_swiper2 .swiper-slide{flex:0 0 25%;}
 .swiper-container.mc_multi_swiper2 .mc_thumbanner{margin:0 5px;}
+.swiper-container.mc_multi_swiper2 .spec_copy_main{-webkit-line-clamp: 2;}
 
 .mc_vitem.travel_vitem{margin-top:90px;}
 .mc_content_toplayer{position:absolute;top:0;left:0;width:100%;transform: translateY(-50%);}

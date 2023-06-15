@@ -43,7 +43,7 @@ html.smooth {scroll-behavior: smooth;}
 
 /* layout */
 .front_body{overflow-x:hidden;position:relative;}
-.page_wrap{}
+.page_wrap{min-width:1340px;}
 .page_wrap.main_page{}
 .page_wrap.main_page .header_zone{border-bottom-color: rgba(255,255,255,.2);position:absolute;top:0;left:0;width:100%;}
 .page_wrap.main_page .toplogo_link{background-position:0 100%;}
@@ -151,5 +151,5 @@ html.smooth {scroll-behavior: smooth;}
 .footer_copyright{margin-top:21px;font-size:12px;color:#fff;opacity:.52;}
 
 @media (max-width:1679px){
-    .top_gnb_list > li{padding:0 20px;}
+    .top_gnb_list > li{padding:0 15px;}
 }
