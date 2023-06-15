@@ -298,3 +298,30 @@ function mc_swiper_func(){
 		mc_multi_swiper.classList.add("nodata_type");
 	}
 }
+
+
+function mcTabFunc(){
+	const mc_ctab = document.querySelectorAll(".mc_ctab");
+	const mc_tabcont = document.querySelectorAll(".mc_tabcont_group .mc_tabcont");
+	let mc_ctab_active = Array.from(mc_ctab).filter(item => item.classList.contains("active"))[0];
+	let mc_tabcont_active = Array.from(mc_tabcont).filter(item => item.classList.contains("active"))[0];
+	mc_ctab.forEach((item)=>{
+		item.addEventListener("click",(e)=>{
+			e.preventDefault();
+			const targetItem = e.currentTarget;
+			const targetItemDom = document.querySelector(targetItem.getAttribute("href"));
+			if(mc_ctab_active){
+				mc_ctab_active.classList.remove("active");
+			}
+			if(mc_tabcont_active){
+				mc_tabcont_active.classList.remove("active");
+			}
+			if(!!targetItemDom){
+				targetItemDom.classList.add("active");
+				mc_tabcont_active = targetItemDom;
+			}
+			targetItem.classList.add("active");
+			mc_ctab_active = targetItem;
+		});
+	});
+}
