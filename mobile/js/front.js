@@ -261,3 +261,56 @@ function mcProFunc01(){
 	}
 }
 
+function mcPublicPro(){
+	let data_container_slide = document.querySelectorAll(".this_public_swiper .swiper-slide");
+	let data_swiper_obj = null;
+	if(data_swiper_obj !== null){
+		data_swiper_obj.update();
+	}else{
+		if(data_container_slide.length>1){
+			data_swiper_obj = new Swiper(".this_public_swiper", {
+				slidesPerView: "auto",
+				spaceBetween: 16,
+				freeMode: true,
+				mousewheelControl: true,
+				pagination: {
+					el: '.this_public_swiper .swiper-pagination',
+				}
+			});
+		}
+	}
+}
+
+function mcTabFlow(){
+	let data_container_slide = document.querySelectorAll(".mctab_container .swiper-slide");
+	let data_swiper_obj = null;
+	if(data_swiper_obj !== null){
+		data_swiper_obj.update();
+	}else{
+		if(data_container_slide.length>1){
+			data_swiper_obj = new Swiper(".mctab_container", {
+				slidesPerView: "auto",
+				spaceBetween: 6,
+				freeMode: true,
+				mousewheelControl: true
+			});
+		}
+	}
+}
+
+
+function tabActiveFunc(target){
+	const targetItem = document.querySelectorAll(target);
+	let activeItem = Array.from(targetItem).filter(item => item.classList.contains("active"))[0];
+	targetItem.forEach((item)=>{
+		item.addEventListener("click",(e)=>{
+			e.preventDefault();
+			const targetItem = e.currentTarget;
+			if(activeItem){
+				activeItem.classList.remove("active");
+			}
+			targetItem.classList.add("active");
+			activeItem = targetItem;
+		});
+	})
+}
