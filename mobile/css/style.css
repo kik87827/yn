@@ -17,7 +17,8 @@ li.nodata_li{padding:100px 20px;text-align: center;display:block !important;}
 .swiper-container.mv_container .swiper-wrapper{}
 .swiper-container.mv_container .swiper-slide{}
 .mv_item{display:block;}
-.mv_item .bg{width:100%;vertical-align: top;}
+.mv_item .bg{width:100%;background-repeat:no-repeat;background-size:cover;background-position:0 0;padding-bottom:125%;}
+.mv_wrap.case02 .mv_item .bg{padding-bottom:97.22222222222222%;}
 .mv_item .mv_copy{position:absolute;top:0;left:0;width:100%;box-sizing: border-box;padding:30px 18px;z-index:5;}
 .mv_item .mv_copy img{max-width: 100%;}
 .swiper-pagination-layer{position:absolute;bottom:10px;left:0;z-index:20;width:100%;text-align: center;}

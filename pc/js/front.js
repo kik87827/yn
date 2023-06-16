@@ -69,7 +69,7 @@ function headerPc(){
 	const head_two_bg = document.querySelector(".head_two_bg");
 	const header_zone = document.querySelector(".header_zone");
 	const gnb_one_menu = document.querySelectorAll(".gnb_one_menu");
-	const total_menu = document.querySelector(".total_menu");
+	//const total_menu = document.querySelector(".total_menu");
 	const two_menu_list_wrap = document.querySelectorAll(".two_menu_list_wrap");
 	let twoArray = [];
 	let maxHeight = 0;
@@ -89,9 +89,9 @@ function headerPc(){
 	header_zone.addEventListener("mouseleave",()=>{
 		menuClose();
 	});
-	total_menu.addEventListener("click",()=>{
-		header_zone.classList.toggle("active");
-	});
+	// total_menu.addEventListener("click",()=>{
+	// 	header_zone.classList.toggle("active");
+	// });
 
 	function menuOpen(){
 		header_zone.classList.add("active");
@@ -148,12 +148,12 @@ function mainVisual(){
 		let url = window.location.href.split('?')[1];
 		let url_2 = url !== undefined ? url.split('#')[0] : null;
 		if(url_2 === "case02"){
-			mv_wrap.style.height = "650px";
+			mv_wrap.style.height = "635px";
 			return;
 		}
 
-		if(windowHeight<700){
-			controlHeight = 700;
+		if(windowHeight<635){
+			controlHeight = 635;
 		}else{
 			controlHeight = windowHeight;
 		}
