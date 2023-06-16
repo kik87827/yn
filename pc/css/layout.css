@@ -43,7 +43,7 @@ html.smooth {scroll-behavior: smooth;}
 
 
 /* layout */
-.front_body{overflow-x:hidden;position:relative;}
+.front_body{overflow:visible;position:relative;}
 .page_wrap{min-width:1680px;}
 .page_wrap.main_page{}
 .page_wrap.main_page .header_zone{border-bottom-color: rgba(255,255,255,.2);position:absolute;top:0;left:0;width:100%;}
@@ -172,3 +172,7 @@ html.smooth {scroll-behavior: smooth;}
 /* @media (max-width:1679px){
     .top_gnb_list > li{padding:0 15px;}
 } */
+
+@media (min-width:1900px){
+    .front_body{overflow-x:hidden;}
+}
