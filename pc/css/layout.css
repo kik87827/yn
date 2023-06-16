@@ -44,7 +44,7 @@ html.smooth {scroll-behavior: smooth;}
 
 /* layout */
 .front_body{overflow-x:hidden;position:relative;}
-.page_wrap{min-width:1340px;}
+.page_wrap{min-width:1680px;}
 .page_wrap.main_page{}
 .page_wrap.main_page .header_zone{border-bottom-color: rgba(255,255,255,.2);position:absolute;top:0;left:0;width:100%;}
 .page_wrap.main_page.type2 .header_zone{background:#00dfde;}
@@ -169,6 +169,6 @@ html.smooth {scroll-behavior: smooth;}
 .footer_copyitem{display:inline-block;font-size:13px;line-height:1;color:#fff;opacity:.35;}
 .footer_copyright{margin-top:21px;font-size:12px;color:#fff;opacity:.52;}
 
-@media (max-width:1679px){
+/* @media (max-width:1679px){
     .top_gnb_list > li{padding:0 15px;}
-}
+} */
