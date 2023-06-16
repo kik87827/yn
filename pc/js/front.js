@@ -197,7 +197,7 @@ function posLayerEvent(){
 
 	$(document).on("click",".pcv_chk",function(e){
 		e.preventDefault();
-		$(this).parents("li").siblings().removeClass("active");
+		$(this).parents(".pclayer_scr_w").find(".pclayer_vlist > li").removeClass("active");
 		$(this).parents("li").addClass("active");
 	});
 

@@ -205,6 +205,17 @@ input.mv_form_input::input-placeholder{color:#fff;}
 .segment_btn_list{}
 .segment_btn_list > li{margin-bottom:7.5px;}
 .segment_btn_list > li:last-of-type{margin-bottom:0;}
+
+.segment_vitem{border-bottom:1px solid #d9d9d9;padding:0 10px 20px 10px;margin-bottom:20px;}
+.segment_vitem:last-of-type{margin-bottom:0;padding-bottom:0;border-bottom:0;}
+.segment_vtitle{font-size:16px;font-weight:700;margin-bottom:10px;}
+.segment_vlist{}
+.segment_vlist > li{margin-bottom:10px;}
+.segment_vlist > li:last-of-type{margin-bottom:0;}
+.segment_text_item{font-size:14px;}
+.segment_text_item.active{color:#00dfde;}
+
+
 .btn_segment_box{display:block;color:#1a1f28;font-size:13px;border:1px solid #333c4c;padding:10px;border-radius:100px;text-align: center;}
 .btn_segment_box.active{background:#333c4c;color:#fff;}
 .btn_modal_close{position:absolute;top:5px;right:5px;width:30px;height:30px;}

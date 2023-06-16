@@ -236,8 +236,8 @@ function hidePopup(target){
 function segmentBox(target,callBtn){
 	const targetDom = document.querySelector(target);
 	const callBtnDom = document.querySelector(callBtn);
-	const targetDomBtn = targetDom.querySelectorAll('.btn_segment_box');
-	let activeDom = targetDom.querySelector('.btn_segment_box.active');
+	const targetDomBtn = targetDom.querySelectorAll('.segment_text_item');
+	let activeDom = targetDom.querySelector('.segment_text_item.active');
 	targetDomBtn.forEach((item)=>{
 		item.addEventListener("click",(e)=>{
 			if(activeDom && activeDom !== e.currentTarget){
