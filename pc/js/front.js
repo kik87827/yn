@@ -144,13 +144,10 @@ function mainVisual(){
 	function heightControl(){
 		let windowHeight = window.innerHeight;
 		let controlHeight = 0;
-		// 퍼블확인용
-		let url = window.location.href.split('?')[1];
-		let url_2 = url !== undefined ? url.split('#')[0] : null;
-		if(url_2 === "case02"){
-			mv_wrap.style.height = "635px";
-			return;
-		}
+		// if(url_2 === "case02"){
+		// 	mv_wrap.style.height = "635px";
+		// 	return;
+		// }
 
 		if(windowHeight<635){
 			controlHeight = 635;

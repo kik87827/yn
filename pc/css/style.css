@@ -1,4 +1,5 @@
 .mv_wrap{position:relative;}
+.page_wrap.type2 .mv_wrap{height:635px !important;}
 .btn_mv_control{position:absolute;top:50%;width:70px;height:70px;z-index:10;background:url("../images/btn_mv_control.png") no-repeat 0 0/100% auto;}
 .btn_mv_control.prev_control{left:0;}
 .btn_mv_control.next_control{right:0;background-position:0 100%;}

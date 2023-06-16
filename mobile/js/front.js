@@ -153,11 +153,11 @@ function mainVisual(){
 	const main_visual_slide = main_visual_container.querySelectorAll(".mv_container .swiper-slide");
 
 	// 퍼블확인용
-	let url = window.location.href.split('?')[1];
-	let url_2 = url !== undefined ? url.split('#')[0] : null;
-	if(url_2 === "case02"){
-		mv_wrap.classList.add("case02");
-	}
+	// let url = window.location.href.split('?')[1];
+	// let url_2 = url !== undefined ? url.split('#')[0] : null;
+	// if(url_2 === "case02"){
+	// 	mv_wrap.classList.add("case02");
+	// }
 
 	if(main_visual_slide.length>1){
 		main_visual_obj = new Swiper(".mv_container", {
