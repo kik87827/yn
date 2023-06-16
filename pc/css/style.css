@@ -196,7 +196,7 @@ input.mv_form_input::input-placeholder{color:#fff;}
 .pclayer_vlist{}
 .pclayer_vlist > li{margin-bottom:15px;}
 .pclayer_vlist > li:last-of-type{margin-bottom:0;}
-.pcv_chk{display:inline-block;font-size:15px;color:#333333;}
+.pcv_chk{display:block;font-size:15px;color:#333333;}
 .pcv_chk.active{color:#00dfde}
 .pcv_chk:hover{color:#00dfde}
 
