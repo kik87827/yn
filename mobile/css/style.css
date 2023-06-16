@@ -212,7 +212,7 @@ input.mv_form_input::input-placeholder{color:#fff;}
 .segment_vlist{}
 .segment_vlist > li{margin-bottom:10px;}
 .segment_vlist > li:last-of-type{margin-bottom:0;}
-.segment_text_item{font-size:14px;}
+.segment_text_item{font-size:14px;display:block;}
 .segment_vtitle.active,
 .segment_text_item.active{color:#00dfde;}
 
