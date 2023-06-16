@@ -197,9 +197,11 @@ input.mv_form_input::input-placeholder{color:#fff;}
 .pclayer_vlist > li{margin-bottom:15px;}
 .pclayer_vlist > li:last-of-type{margin-bottom:0;}
 .pcv_chk{display:inline-block;font-size:15px;color:#333333;}
-.pclayer_vlist > li.active .pcv_chk{color:#00dfde}
+.pcv_chk.active{color:#00dfde}
 .pcv_chk:hover{color:#00dfde}
 
 .pcv_chk_vitem{border-bottom:1px solid #e7e7e7;padding:20px 20px;margin:0 20px;}
 .pcv_chk_vitem:last-of-type{border-bottom:0}
-.pcv_chk_vtitle{font-size:18px;font-weight:500;margin-bottom:18px;}
+.pcv_chk_vtitle{font-size:18px;font-weight:500;margin-bottom:18px;color:#000000;display:block;}
+.pcv_chk_vtitle.active{color:#00dfde}
+.pcv_chk_vtitle:hover{color:#00dfde}

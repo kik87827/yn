@@ -184,7 +184,7 @@ function posLayerEvent(){
 		let thisParent = $(this).parents(".poslayer_z");
 		let targetCols = $(`[data-poslayer='#${thisParent.attr("id")}']`);
 		let activeDate = thisParent.attr("data-date");
-		let activeText = thisParent.find(".pclayer_vlist > li.active").text();
+		let activeText = thisParent.find(".pcv_chk.active,.pcv_chk_vtitle.active").text();
 		if(thisParent.attr("data-date") !== undefined){
 			targetCols.find(".mv_form_text").html(activeDate);
 			targetCols.addClass("result_mode");
@@ -195,10 +195,10 @@ function posLayerEvent(){
 		posLayerHide(thisParent);
 	});
 
-	$(document).on("click",".pcv_chk",function(e){
+	$(document).on("click",".pcv_chk,.pcv_chk_vtitle",function(e){
 		e.preventDefault();
-		$(this).parents(".pclayer_scr_w").find(".pclayer_vlist > li").removeClass("active");
-		$(this).parents("li").addClass("active");
+		$(this).parents(".pclayer_scr_w").find(".pcv_chk_vtitle,.pcv_chk").removeClass("active");
+		$(this).addClass("active");
 	});
 
 	$(document).on("click",function(e){

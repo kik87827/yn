@@ -236,14 +236,22 @@ function hidePopup(target){
 function segmentBox(target,callBtn){
 	const targetDom = document.querySelector(target);
 	const callBtnDom = document.querySelector(callBtn);
-	const targetDomBtn = targetDom.querySelectorAll('.segment_text_item');
-	let activeDom = targetDom.querySelector('.segment_text_item.active');
+	const targetDomBtn = targetDom.querySelectorAll('.chk_vtext');
+	let activeDom = targetDom.querySelector('.chk_vtext.active');
 	targetDomBtn.forEach((item)=>{
 		item.addEventListener("click",(e)=>{
 			if(activeDom && activeDom !== e.currentTarget){
 				activeDom.classList.remove("active");
 			}
+			// if(!!activeDomGroup){
+			// 	activeDomGroup.forEach((item)=>{
+			// 		if(item !== null){
+			// 			item.classList.remove("active");
+			// 		}
+			// 	})
+			// }
 			e.currentTarget.classList.add("active");
+			// activeDomGroup.push(e.currentTarget);
 			activeDom = e.currentTarget;
 			callBtnDom.textContent = e.currentTarget.textContent;
 			//hidePopup(targetDom);
