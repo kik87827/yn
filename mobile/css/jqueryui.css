@@ -296,10 +296,11 @@ tr td.ui-datepicker-week-end:first-of-type a{color:#d13249;}
 	font-family: 'Noto Sans KR';
 	color: #000;
 	font-size:15px;
-	height:40px;
-	line-height:40px;
+	height:30px;
+	line-height:30px;
 	border-radius:100%;
 }
+.ui-state-default{width:30px;height:30px;margin:0 auto;display:block;}
 .ui-state-default a,
 .ui-state-default a:link,
 .ui-state-default a:visited {
