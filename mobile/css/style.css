@@ -200,7 +200,7 @@ input.mv_form_input::input-placeholder{color:#fff;}
 .modal_box{background:#fff;width:100%;border-radius:23px;display:flex;flex-direction: column;text-align: center;position:relative;max-height:100%;z-index:5;}
 .modal_title_row{flex:0;text-align: center;padding:15px 45px;border-bottom:1px solid #d9d9d9;}
 .modal_btn_row{flex:0;text-align: center;padding:0;border-top:1px solid #d9d9d9;}
-.modal_btn_row .btn_psubmit{padding:15px 45px;display:block;text-align: center;}
+.modal_btn_row .btn_psubmit{padding:20px 45px;display:block;text-align: center;border:0;min-width:0;}
 .modal_title{display:inline-block;font-size:14px;}
 .modal_content_row{flex:1;min-height:0;padding:20px;position:relative;overflow-y:auto;}
 .segment_btn_list{}
