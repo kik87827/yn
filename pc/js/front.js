@@ -131,10 +131,10 @@ function mainVisual(){
 		mv_obj = new Swiper(".mv_container", {
 			speed : 1000,
 			loop : true,
-			autoplay: {
-				delay: 2500,
-				disableOnInteraction: false
-			},
+			// autoplay: {
+			// 	delay: 2500,
+			// 	disableOnInteraction: false
+			// },
             navigation: {
                 nextEl: '.mv_wrap .btn_mv_control.next_control',
                 prevEl: '.mv_wrap .btn_mv_control.prev_control',
