@@ -198,10 +198,10 @@ function posLayerEvent(){
 		let activeDate = thisParent.attr("data-date");
 		let activeText = thisParent.find(".pcv_chk.active,.pcv_chk_vtitle.active").text();
 		if(thisParent.attr("data-date") !== undefined){
-			targetCols.find(".mv_form_text").html(activeDate);
+			targetCols.find(".mv_form_text,.search_form_text_result").html(activeDate);
 			targetCols.addClass("result_mode");
 		}else{
-			targetCols.find(".mv_form_text").html(activeText);
+			targetCols.find(".mv_form_text,.search_form_text_result").html(activeText);
 			targetCols.addClass("result_mode");
 		}
 		posLayerHide(thisParent);
@@ -259,6 +259,11 @@ function posLayerPos(target,btn){
 			"left": $btnPosLeft
 		});
 	}
+	if($target.hasClass("postype2")){
+		$target.css({
+			"top": $btnPosTop - 10
+		});
+	}
 }
 
 function posLayerResizeAction(target){
@@ -279,6 +284,11 @@ function posLayerResizeAction(target){
 		$target.css({
 			"top": $btnPosTop + $btnPosHeight + 20,
 			"left": $btnPosLeft
+		});
+	}
+	if($target.hasClass("postype2")){
+		$target.css({
+			"top": $btnPosTop - 10
 		});
 	}
 }

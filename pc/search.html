@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1280" />
+    <link href="./css/common_c.css" rel="stylesheet"> <!-- 템플릿 사이트 common -->
+    <link href="./css/layout.css" rel="stylesheet">
+    <link href="./css/swiper.min.css" rel="stylesheet">
+    <link href="./css/jqueryui.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+
+    <script src="./js/moment.min.js"></script>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/hoverIntent.js"></script>
+    <script src="./js/swiper.min.js"></script>
+    <script src="./js/daterangepicker.js"></script>
+    <script src="./js/jquery-ui.js"></script>
+    <script src="./js/front.js"></script>
+    <title></title>
+</head>
+<body class="front_body">
+    <div class="page_wrap">
+        <!-- header -->
+        <header class="header_zone">
+            <h1 class="toplogo"><a href="#" class="toplogo_link"></a></h1>
+            <div class="top_main_wrap">
+                <ul class="top_gnb_list">
+                    <li>
+                        <a href="#" class="gnb_one_menu"><span class="gnb_one_menu_text">일본</span></a>
+                        <div class="two_menu_list_wrap">
+                            <ul class="two_menu_list">
+                                <li><a href="#" class="gnb_two_menu">쿠슈/후쿠오카</a></li>
+                                <li><a href="#" class="gnb_two_menu">오사카</a></li>
+                                <li><a href="#" class="gnb_two_menu">삿포로</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="gnb_one_menu"><span class="gnb_one_menu_text">동남아</span></a>
+                        <div class="two_menu_list_wrap">
+                            <ul class="two_menu_list">
+                                <li><a href="#" class="gnb_two_menu">싱가포르</a></li>
+                                <li><a href="#" class="gnb_two_menu">타이베이</a></li>
+                                <li><a href="#" class="gnb_two_menu">다낭/나트랑</a></li>
+                                <li><a href="#" class="gnb_two_menu">방콕/파타야</a></li>
+                                <li><a href="#" class="gnb_two_menu">세부</a></li>
+                                <li><a href="#" class="gnb_two_menu">보라카이</a></li>
+                                <li><a href="#" class="gnb_two_menu">클락</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="gnb_one_menu"><span class="gnb_one_menu_text">중국/몽골</span></a>
+                        <div class="two_menu_list_wrap">
+                            <ul class="two_menu_list">
+                                <li><a href="#" class="gnb_two_menu">징가계</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="gnb_one_menu"><span class="gnb_one_menu_text">대양주</span></a>
+                        <div class="two_menu_list_wrap">
+                            <ul class="two_menu_list">
+                                <li><a href="#" class="gnb_two_menu">괌</a></li>
+                                <li><a href="#" class="gnb_two_menu">호주</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="gnb_one_menu"><span class="gnb_one_menu_text">골프 투어</span></a>
+                        <div class="two_menu_list_wrap">
+                            <ul class="two_menu_list">
+                                <li><a href="#" class="gnb_two_menu">일본골프</a></li>
+                                <li><a href="#" class="gnb_two_menu">필리핀골프</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="gnb_one_menu"><span class="gnb_one_menu_text">인천출발</span></a>
+                    </li>
+                    <li>
+                        <a href="#" class="gnb_one_menu"><span class="gnb_one_menu_text">기업/단체문의</span></a>
+                    </li>
+                    <li>
+                        <a href="#" class="gnb_one_menu total_menu"><span class="gnb_one_menu_text">전체메뉴</span></a>
+                        <div class="two_menu_list_wrap">
+                            <ul class="two_menu_list">
+                                <li><a href="#" class="gnb_two_menu">국가별입국정보</a></li>
+                                <li><a href="#" class="gnb_two_menu">공지사항</a></li>
+                                <li><a href="#" class="gnb_two_menu">여행후기</a></li>
+                                <li><a href="#" class="gnb_two_menu">기획전</a></li>
+                                <li><a href="#" class="gnb_two_menu">이벤트</a></li>
+                                <li><a href="#" class="gnb_two_menu">질문과답변</a></li>
+                                <li><a href="#" class="gnb_two_menu">맞춤문의</a></li>
+                                <li><a href="#" class="gnb_two_menu">자주하는질문</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="top_util_wrap">
+                <ul class="head_util_list">
+                    <li><a href="#" class="util_box">로그인</a></li>
+                    <li><a href="#" class="util_text_item ico_men">회원가입</a></li>
+                    <li><a href="#" class="util_text_item">마이페이지</a></li>
+                    <li><a href="#" class="util_text_item">고객센터</a></li>
+                </ul>
+            </div>
+            <div class="head_two_bg"></div>
+        </header>
+        <!-- // header -->
+        <!-- middle -->
+        <section class="middle_zone">
+            <div class="middle_pixin">
+                <div class="middle_title_row"><p class="middle_title">검색</p></div>
+                <div class="middle_search_field_row">
+					<div class="search_field_wrap">
+                        <a href="#" class="search_field_cols define_local" id="local_target" data-poslayer="#layer_box_01">
+							<div class="search_field_form">
+								<div class="search_form_label">지역</div>
+								<div class="search_form_text_g">
+									<div class="search_form_text_place">어디로 가세요?</div>
+									<div class="search_form_text_result"></div>
+								</div>
+							</div>
+						</a>
+                        <a href="#" class="search_field_cols define_start" id="start_target" data-poslayer="#layer_box_02">
+							<div class="search_field_form">
+								<div class="search_form_label">출발일</div>
+								<div class="search_form_text_g">
+									<div class="search_form_text_place">날짜를 입력하세요</div>
+									<div class="search_form_text_result"></div>
+								</div>
+							</div>
+						</a>
+                        <div class="search_field_cols define_search">
+							<div class="search_field_form">
+								<p class="search_form_label">검색어</p>
+								<div class="search_form_text_g">
+									<input type="text" class="input_search_form" placeholder="검색어를 입력해주세요">
+								</div>
+							</div>
+						</div>
+						<div class="search_field_cols define_btn">
+							<a href="#" class="btn_search_form"><span class="hdtext">검색</span></a>
+						</div>
+                    </div>
+                </div>
+                <div class="middle_list_data_zone">
+                    <div class="board_top_wrap">
+						<div class="board_top_cols">
+							<a href="#" class="btn_ico_sort ico_filter" id="filter_target" data-poslayer="#layer_box_filter"><span class="ico_sort_text">필터</span></a>
+						</div>
+						<div class="board_top_cols">
+                            <p class="bosrd_current_para"><strong>10</strong>개 상품</p>
+							<div class="boxquad_tab_list">
+								<a href="#" class="boxquad_tab active">추천상품순</a>
+								<a href="#" class="boxquad_tab">낮은가격순</a>
+								<a href="#" class="boxquad_tab">높은가격순</a>
+							</div>
+						</div>
+					</div>
+                    <div class="board_list_wrap">
+                        <ul class="board_thumnail_list">
+							<li>
+                                <div class="board_thumnail_obj">
+                                    <a href="#" class="board_thumnail_img_cols">
+										<img src="./images/temp_350x240_01.jpg" alt="">
+									</a>
+                                    <div class="board_thumnail_spec_cols">
+                                        내용이 들어갑니다.
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <script>
+						const d_list_option = document.querySelectorAll(".d_list_option");
+						const d_fold_option = document.querySelectorAll(".d_fold_option");
+						d_list_option.forEach((element)=>{
+							element.addEventListener("click", (e)=> {
+								e.preventDefault();
+								let thisObj = e.currentTarget;
+								let thisObjParent = thisObj.closest(".board_thumnail_list > li");
+								let thisObjTarget = thisObjParent.querySelector(".list_option_zone");
+								thisObj.classList.toggle("type2");
+								thisObjTarget.classList.toggle("active");
+							},false);
+						});
+						d_fold_option.forEach((element) => {
+							element.addEventListener("click", (e)=> {
+								e.preventDefault();
+								let thisObj = e.currentTarget;
+								let thisObjParent = thisObj.closest(".board_thumnail_list > li");
+								let thisObjTarget = thisObjParent.querySelector(".list_option_zone");
+								let thisObjCall = thisObjParent.querySelector(".d_list_option");
+								thisObjCall.classList.remove("type2");
+								thisObjTarget.classList.remove("active");
+							},false);
+						});
+					</script>
+					<!-- paging -->
+					<div class="pagination">
+						<a href="#none" class="control first"><span class="hdtext">처음 목록으로 이동</span></a>
+						<a href="#none" class="control prev"><span class="hdtext">이전 목록으로 이동</span></a>
+						<a href="#none" class="num on">1</a>
+						<a href="#none" class="num">2</a>
+						<a href="#none" class="num">3</a>
+						<a href="#none" class="num">4</a>
+						<a href="#none" class="num">5</a>
+						<a href="#none" class="num">6</a>
+						<a href="#none" class="num">7</a>
+						<a href="#none" class="num">8</a>
+						<a href="#none" class="num">9</a>
+						<a href="#none" class="num">10</a>
+						<a href="#none" class="control next"><span class="hdtext">다음 목록으로 이동</span></a>
+						<a href="#none" class="control last last_focus"><span class="hdtext">마지막 목록으로 이동</span></a>
+					</div>
+					<!-- // paging -->
+                </div>
+            </div>
+        </section>
+        <!-- // middle -->
+        <div class="floating_layer">
+            <div class="floating_items">
+                <a href="#" class="btn_pagetop"></a>
+                <ul class="floaging_sns_list">
+                    <li><a href="#" class="sns_quick kakao"><span class="sns_quick_text">채팅상담</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- footer -->
+        <footer class="footer_zone">
+            <div class="footer_else_low">
+				<div class="footer_else_pixin">
+					<p class="footer_else_label">영남세계일주 SNS 공식 채널</p>
+					<ul class="footer_sns_list">
+						<li><a href="#" class="sns_item sns_kakao" target="_blank"><span class="hdtext">kakao</span></a></li>
+						<li><a href="#" class="sns_item sns_blog" target="_blank"><span class="hdtext">blog</span></a></li>
+						<li><a href="#" class="sns_item sns_insta" target="_blank"><span class="hdtext">insta</span></a></li>
+					</ul>
+				</div>
+			</div>
+            <div class="footer_main_low">
+                <div class="footer_main_pixin">
+                    <ul class="footer_menu_list">
+                        <li><a href="#" class="footer_menu">회사소개</a></li>
+                        <li><a href="#" class="footer_menu">개인정보취급방침</a></li>
+                        <li><a href="#" class="footer_menu">이용약관</a></li>
+                        <li><a href="#" class="footer_menu">해외여행약관</a></li>
+                    </ul>
+                    <div class="footer_main_logo_row">
+                        <span class="footer_main_logo"><img src="images/bottom_logo.png" alt="YN World Tour"></span>
+                    </div>
+                    <div class="footer_copyitem_list_wrap">
+                        <ul class="footer_copyitem_list">
+                            <li><span class="footer_copyitem">상호: (주)영남세계일주</span></li>
+                            <li><span class="footer_copyitem">대표: 한상훈</span></li>
+                        </ul>
+                        <ul class="footer_copyitem_list">
+                            <li><span class="footer_copyitem">주소: 부산광역시 중구 충장대로 7 교보생명빌딩 6층</span></li>
+                            <li><span class="footer_copyitem">대표번호: 051-715-4488</span></li>
+                            <li><span class="footer_copyitem">팩스: 051-719-4778</span></li>
+                        </ul>
+                        <ul class="footer_copyitem_list">
+                            <li><span class="footer_copyitem">이메일: hyemi.park@hanamnc.com</span></li>
+                            <li><span class="footer_copyitem">사업자등록번호: 134-87-39755</span></li>
+                            <li><span class="footer_copyitem">통신판매업신고번호:제 2022-부산중구-0019호</span></li>
+                        </ul>
+                    </div>
+                    <p class="footer_copyright">Copyright @ (주)영남세계일주.  All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+        <!-- // footer -->
+
+        <!-- layer -->
+		<div class="poslayer_z" id="layer_box_01">
+            <div class="poslayer_titlow">
+                <p class="poslayer_tit">지역선택</p>
+            </div>
+            <div class="poslayer_contlow type2">
+                <div class="pcont_w">
+                    <div class="pclayer_scr_w">
+                        <div class="pcv_chk_vitem">
+                            <a href="javascript:;" class="pcv_chk_vtitle">일본</a>
+                            <ul class="pclayer_vlist">
+                                <li><a href="javascript:;" class="pcv_chk">쿠슈/후쿠오카</a></li>
+                                <li><a href="javascript:;" class="pcv_chk">오사카</a></li>
+                                <li><a href="javascript:;" class="pcv_chk">삿포로</a></li>
+                            </ul>
+                        </div>
+                        <div class="pcv_chk_vitem">
+                            <a href="javascript:;" class="pcv_chk_vtitle">동남아</a>
+                            <ul class="pclayer_vlist">
+                                <li><a href="javascript:;" class="pcv_chk">싱가포르</a></li>
+                                <li><a href="javascript:;" class="pcv_chk">대만-타이베이</a></li>
+                                <li><a href="javascript:;" class="pcv_chk">베트남-다낭/나트랑</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn_psubmit_w type2">
+                    <a href="#" class="btn_psubmit">적용</a>
+                </div>
+            </div>
+            <button type="button" class="layerclose"><span class="hdtext">닫기</span></button>
+        </div>
+        <div class="poslayer_z wtype2" id="layer_box_02">
+            <div class="poslayer_titlow">
+                <p class="poslayer_tit">출발일 선택</p>
+            </div>
+            <div class="poslayer_contlow">
+                <div class="pcont_w">
+                    <div class="insert_date_parent" id="start_date_div">
+
+					</div>
+                </div>
+                <div class="btn_psubmit_w">
+                    <a href="#" class="btn_psubmit">적용</a>
+                </div>
+            </div>
+            <button type="button" class="layerclose"><span class="hdtext">닫기</span></button>
+        </div>
+        <div class="poslayer_z wtype3 postype2" id="layer_box_filter">
+            <div class="poslayer_contlow type3">
+                <div class="filter_tab_row">
+                    <ul class="filter_tab_list">
+                        <li><a href="#filter_cont01" class="filter_tab active">출발요일 선택</a></li>
+                        <li><a href="#filter_cont02" class="filter_tab">출발지</a></li>
+                        <li><a href="#filter_cont03" class="filter_tab">출발시간</a></li>
+                        <li><a href="#filter_cont04" class="filter_tab">여행기간</a></li>
+                        <li><a href="#filter_cont05" class="filter_tab">가격</a></li>
+                    </ul>
+                </div>
+                <div class="filter_form_row">
+                    <div class="filter_form_cont" id="filter_cont01">
+                        <div class="filter_form_boxitem_wrap">
+                            <ul class="filter_form_boxitem_list">
+                                <li><button type="button" class="filter_form_boxitem">월요일</button></li>
+                                <li><button type="button" class="filter_form_boxitem">화요일</button></li>
+                                <li><button type="button" class="filter_form_boxitem">수요일</button></li>
+                                <li><button type="button" class="filter_form_boxitem">목요일</button></li>
+                                <li><button type="button" class="filter_form_boxitem">금요일</button></li>
+                                <li><button type="button" class="filter_form_boxitem">토요일</button></li>
+                                <li><button type="button" class="filter_form_boxitem">일요일</button></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="filter_form_cont" id="filter_cont02">
+                        <div class="filter_form_boxitem_wrap">
+                            <ul class="filter_form_boxitem_list">
+                                <li><button type="button" class="filter_form_boxitem">인천</button></li>
+                                <li><button type="button" class="filter_form_boxitem">부산</button></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="filter_form_cont" id="filter_cont03">
+                        <div class="filter_form_boxitem_wrap">
+                            <ul class="filter_form_boxitem_list">
+                                <li><button type="button" class="filter_form_boxitem">오전</button></li>
+                                <li><button type="button" class="filter_form_boxitem">오후</button></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="filter_form_cont" id="filter_cont04">
+                        <div class="filter_form_boxitem_wrap">
+                            <ul class="filter_form_boxitem_list">
+                                <li><button type="button" class="filter_form_boxitem">2일</button></li>
+                                <li><button type="button" class="filter_form_boxitem">3일</button></li>
+                                <li><button type="button" class="filter_form_boxitem">4일</button></li>
+                                <li><button type="button" class="filter_form_boxitem">5일</button></li>
+                                <li><button type="button" class="filter_form_boxitem">6일</button></li>
+                                <li><button type="button" class="filter_form_boxitem">7일</button></li>
+                                <li><button type="button" class="filter_form_boxitem">7일 이상</button></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="filter_form_cont" id="filter_cont05">
+                        <div class="filter_form_boxitem_wrap">
+                            <ul class="filter_form_boxitem_list">
+                                <li><button type="button" class="filter_form_boxitem">30~50 만원</button></li>
+                                <li><button type="button" class="filter_form_boxitem">50~100 만원</button></li>
+                                <li><button type="button" class="filter_form_boxitem">100만원~200만원</button></li>
+                                <li><button type="button" class="filter_form_boxitem">200만원~300만원</button></li>
+                            </ul>
+                        </div>
+                        <div class="filter_else_wrap">
+                            <p class="filter_else_label">직접입력(만원 단위로 입력)</p>
+                            <div class="filter_else_cont">
+                                <ul class="form_format_list">
+                                    <li><input type="text" class="filter_input_item"></li>
+                                    <li><span class="filter_input_elsetext">-</span></li>
+                                    <li><input type="text" class="filter_input_item"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter_result_row">
+                    <div class="filter_getdata_cols">
+                        <ul class="filter_getdata_list">
+                            <li><div class="filter_getdata"><span class="getdata_text">월요일</span><button class="btn_getdat_del"></button></div></li>
+                            <li><div class="filter_getdata"><span class="getdata_text">인천</span><button class="btn_getdat_del"></button></div></li>
+                        </ul>
+                    </div>
+                    <div class="filter_control_cols">
+                        <ul class="filter_control_list">
+                            <li><button class="btn_control_box ico_reset"><span class="btn_control_box_text">초기화</span></button></li>
+                            <li><a href="#" class="btn_quadbox_item ico_allow"><span class="quadbox_item_text">2개 상품 보기</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="layerclose"><span class="hdtext">닫기</span></button>
+        </div>
+		<!-- // layer -->
+
+        <!-- main script -->
+        <script>
+            document.addEventListener("DOMContentLoaded",() => {
+                
+            });
+
+            $(function(){
+                var start_date_div = $("#start_date_div");
+                var date_div_parent = start_date_div.parents(".poslayer_z"); 
+                // 픽업 레이어 달력
+                start_date_div.datepicker({
+                    beforeShow: function () {
+                        start_date_div.find(".ui-datepicker-next , .ui-datepicker-prev").addClass("layer_in_control");
+                        parentDateUpdate();
+                    },
+                    onSelect: function () {
+                        start_date_div.find(".ui-datepicker-next , .ui-datepicker-prev").addClass("layer_in_control");
+                        parentDateUpdate();
+                    },
+                    onChangeMonthYear: function () {
+                        start_date_div.find(".ui-datepicker-next , .ui-datepicker-prev").addClass("layer_in_control");
+                        parentDateUpdate();
+                    }
+                });
+                start_date_div.find(".ui-datepicker-next , .ui-datepicker-prev").addClass("layer_in_control");
+                parentDateUpdate();
+                
+
+                function parentDateUpdate(){
+                    var getDate = start_date_div.datepicker("getDate");
+                    var monthText = String(getDate.getMonth()).length == 1 ? `0${getDate.getMonth()+1}` : getDate.getMonth()+1;
+                    var dateText = String(getDate.getDate()).length == 1 ? `0${getDate.getDate()}` : getDate.getDate();
+                    date_div_parent.attr("data-date",getDate.getFullYear()+"-"+monthText+"-"+dateText)
+                }
+            })
+            
+            window.addEventListener("load",() => {
+                
+            });
+        </script>
+        <!-- // main script -->
+    </div>
+</body>
+</html>
