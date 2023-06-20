@@ -459,3 +459,50 @@ input.mv_form_input::input-placeholder{color:#fff;}
 .author_logo > img{vertical-align: middle;height:14px;}
 .author_text{display:inline-block;font-size:15px;color:#2b2b2b;line-height:1;white-space: nowrap; text-overflow: ellipsis;overflow:hidden;position:relative; max-width:99%;}
 
+
+/* filter */
+.filter_contlow{font-family: 'Noto Sans KR';}
+.filter_tab_row{padding:20px 0;border-bottom:1px solid #cacaca;}
+.filter_tab_list{display:flex;gap:6px;}
+.filter_tab_list > li{}
+.filter_tab_list > li:last-of-type{}
+.filter_tab{border:1px solid #d4d4d4;font-size:16px;color:#2d2d2d;display:flex;align-items: center;justify-content: center;display:flex;height:100%;box-sizing: border-box;padding:10px 10px 11px;min-width:150px;min-height:50px;}
+.filter_tab.active{background:#3e3e3e;color:#fff;font-weight:500;border-color:#3e3e3e;}
+.filter_form_row{padding:24px 0;}
+.filter_form_cont{}
+.filter_form_cont.active{}
+.filter_form_boxitem_wrap{}
+.filter_form_boxitem_list{}
+.filter_form_boxitem_list > li{}
+.filter_form_boxitem_list > li:last-of-type{}
+.filter_form_boxitem{}
+.filter_form_boxitem.active{}
+.filter_else_wrap{}
+.filter_else_label{}
+.filter_else_cont{}
+.form_format_list{}
+.form_format_list > li{}
+.form_format_list > li.else{}
+input.filter_input_item{}
+.filter_input_elsetext{}
+.filter_result_row{border-top:1px solid #e7e7e7;padding:20px 0 25px}
+.filter_getdata_cols{}
+.filter_getdata_list{}
+.filter_getdata_list > li{}
+.filter_getdata_list > li:last-of-type{}
+.filter_getdata{}
+.getdata_text{}
+.filter_control_cols{}
+.filter_control_list{}
+.filter_control_list > li{}
+.filter_control_list > li:last-of-type{}
+.btn_control_box{}
+.btn_control_box_text{}
+.btn_control_box:before{}
+.btn_control_box.ico_reset{}
+.btn_quadbox_item{}
+.btn_quadbox_item.ico_allow{}
+.btn_quadbox_item.ico_allow .quadbox_item_text{}
+.btn_quadbox_item.ico_allow .quadbox_item_text:after{}
+.quadbox_item_text{}
+/* // filter */
