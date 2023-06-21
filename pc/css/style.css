@@ -510,11 +510,11 @@ input.filter_input_item{font-family: 'Noto Sans KR';border:1px solid #d4d4d4;hei
 .filter_getdata_list > li:last-of-type{}
 .filter_getdata{display:inline-flex;border:1px solid #e9e9e9;padding:10px 15px;}
 .getdata_text{font-size:16px;color:#1b1b1b;line-height:1;display:inline-block;}
-.btn_getdat_del{display:inline-block;width:15px;height:15px;margin-left:10px;position:relative;}
-.btn_getdat_del:before,
-.btn_getdat_del:after{display:block;content:'';width:12px;height:1px;background:#777;position:absolute;top:50%;left:50%;margin:0 0 0 -6px;}
-.btn_getdat_del:before{transform: rotate(45deg);}
-.btn_getdat_del:after{transform: rotate(-45deg);}
+.btn_getdata_del{display:inline-block;width:15px;height:15px;margin-left:10px;position:relative;}
+.btn_getdata_del:before,
+.btn_getdata_del:after{display:block;content:'';width:12px;height:1px;background:#777;position:absolute;top:50%;left:50%;margin:0 0 0 -6px;}
+.btn_getdata_del:before{transform: rotate(45deg);}
+.btn_getdata_del:after{transform: rotate(-45deg);}
 .filter_control_cols{display:flex;align-items: center;justify-content: flex-end;}
 .filter_control_list{display:flex;gap:20px;align-items: center;}
 .filter_control_list > li{}

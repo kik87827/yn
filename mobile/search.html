@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="format-detection" content="telephone=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link href="./css/common_re.css" rel="stylesheet"><!-- 템플릿 사이트 common -->
+	<link href="./css/layout.css" rel="stylesheet">
+	<link href="./css/swiper.min.css" rel="stylesheet">
+	<link href="./css/jqueryui.css" rel="stylesheet"><!-- 230615 추가 -->
+	<link href="./css/style.css" rel="stylesheet">
+	<script src="./js/jquery-3.4.1.min.js"></script>
+	<script src="./js/dynamicListener.min.js"></script>
+	<script src="./js/swiper.min.js"></script>
+	<script src="./js/jquery-ui.js"></script><!-- 230615 추가 -->
+	<script src="./js/front.js"></script>
+	<title></title>
+</head>
+
+<body class="front_body">
+	<div class="page_wrap">
+		<!-- header -->
+		<header class="header_wrap">
+			<a href="javascript:;" class="btn_hdtotal">
+				<span class="btn_hdtotal_in"></span>
+			</a>
+			<h1 class="toplogo">
+				<a href="#" class="toplogo_link"><img src="./images/toplogo.png" alt=""></a>
+			</h1>
+			<div class="header_util_wrap">
+				<a href="javascript:;" class="btn_hd ico_search"></a>
+				<a href="javascript:;" class="btn_hd ico_men"></a>
+			</div>
+			<!-- mobile menu -->
+			<div class="mobile_mainmenu_zone">
+				<div class="mainmenu_dim"></div>
+				<div class="mobile_mainmenu_wrap">
+					<div class="mbutil_low">
+						<!-- 로그인 전 -->
+						<div class="mbutil_item_list">
+							<div class="mbutil_item">
+								<span class="mbutil_prof_thum"></span>
+								<span class="mbutil_prof_text">로그인</span>
+							</div>
+							<a href="#" class="btn_mbutil_box">회원가입</a>
+						</div>
+						<!-- // 로그인 전 -->
+						<!-- 로그인 후 -->
+						<!-- <div class="mbutil_item_list">
+							<div class="mbutil_item">
+								<span class="mbutil_prof_thum"></span>
+								<span class="mbutil_prof_text">로그아웃</span>
+							</div>
+							<a href="#" class="btn_mbutil_box">마이페이지</a>
+						</div> -->
+						<!-- // 로그인 후 -->
+					</div>
+					<div class="mbmenu_low">
+						<div class="mbmenu_inwrap">
+							<ul class="mbmenu_vlist">
+								<li>
+									<a href="#" class="mbmenu_one">일본</a>
+									<div class="mbmenu_two_wrap">
+										<ul class="mbmenu_two_list">
+											<li><a href="#" class="mbmenu_two">쿠슈/후쿠오카</a></li>
+											<li><a href="#" class="mbmenu_two">오사카</a></li>
+											<li><a href="#" class="mbmenu_two">삿포로</a></li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<a href="#" class="mbmenu_one">동남아</a>
+									<div class="mbmenu_two_wrap">
+										<ul class="mbmenu_two_list">
+											<li><a href="#" class="mbmenu_two">싱가포르</a></li>
+											<li><a href="#" class="mbmenu_two">타이베이</a></li>
+											<li><a href="#" class="mbmenu_two">다낭/나트랑</a></li>
+											<li><a href="#" class="mbmenu_two">방콕/파타야</a></li>
+											<li><a href="#" class="mbmenu_two">세부</a></li>
+											<li><a href="#" class="mbmenu_two">보라카이</a></li>
+											<li><a href="#" class="mbmenu_two">클락</a></li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<a href="#" class="mbmenu_one">중국/몽골</a>
+									<div class="mbmenu_two_wrap">
+										<ul class="mbmenu_two_list">
+											<li><a href="#" class="mbmenu_two">징가계</a></li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<a href="#" class="mbmenu_one">대양주</a>
+									<div class="mbmenu_two_wrap">
+										<ul class="mbmenu_two_list">
+											<li><a href="#" class="mbmenu_two">괌</a></li>
+											<li><a href="#" class="mbmenu_two">호주</a></li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<a href="#" class="mbmenu_one">골프 투어</a>
+									<div class="mbmenu_two_wrap">
+										<ul class="mbmenu_two_list">
+											<li><a href="#" class="mbmenu_two">일본골프</a></li>
+											<li><a href="#" class="mbmenu_two">필리핀골프</a></li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<a href="#" class="mbmenu_one">인천출발</a>
+								</li>
+								<li>
+									<a href="#" class="mbmenu_one">기업/단체문의</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<a href="#" class="btn_mbmenuclose">
+						<span class="hdtext">메인메뉴 닫기</span>
+					</a>
+				</div>
+			</div>
+			<!-- // mobile menu -->
+		</header>
+		<!-- // header -->
+		<!-- middle -->
+		<section class="middle_wrap sub_middle">
+			<!-- sortbox_form_wrap -->
+			<div class="sortbox_form_wrap">
+				<div class="sortbox_form_fxwrap">
+					<a href="#" class="sortbox_form_item ico_map" id="form_map"><span class="sortbox_form_item_text">지역</span></a>
+					<a href="#" class="sortbox_form_item ico_date" id="form_date"><span class="sortbox_form_item_text">출발일</span></a>
+					<a href="#" class="sortbox_form_item ico_search" id="form_search"><span class="sortbox_form_item_text">검색어</span></a>
+				</div>
+			</div>
+			<!-- // sortbox_form_wrap -->
+			<!-- sort_result_quad_wrap -->
+			<div class="sort_result_quad_wrap">
+				<ul class="sort_result_quad_list">
+					<li>
+						<div class="sort_result_quad ico_calendar">
+							<span class="sort_result_text">수,목,금</span>
+							<button type="button" class="btn_sort_result_del"></button>
+						</div>
+					</li>
+					<li>
+						<div class="sort_result_quad ico_moon">
+							<span class="sort_result_text">7일</span>
+							<button type="button" class="btn_sort_result_del"></button>
+						</div>
+					</li>
+					<li>
+						<div class="sort_result_quad ico_map">
+							<span class="sort_result_text">부산출발</span>
+							<button type="button" class="btn_sort_result_del"></button>
+						</div>
+					</li>
+					<li>
+						<div class="sort_result_quad ico_pay">
+							<span class="sort_result_text">200만원~300만원</span>
+							<button type="button" class="btn_sort_result_del"></button>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<!-- // sort_result_quad_wrap -->
+			<div class="sortlist_top_wrap">
+				<div class="sortlist_left_cols">
+					<a href="#" class="btn_ico_sort ico_filter" id="form_filter">
+						<span class="ico_sort_text">필터</span>
+						<span class="ico_sort_count">4</span>
+					</a>
+				</div>
+				<div class="sortlist_right_cols">
+					<p class="board_current_para">총 <strong>10</strong>개 상품</p>
+					<select class="form_select"><option>추천순</option></select>
+				</div>
+			</div>
+			<div class="board_thumnail_wrap">
+				<ul class="board_thumnail_list">
+					<li>
+						<div class="board_thumnail_obj">
+							<a href="#" class="board_thumnail_img_cols">
+								<img src="./images/temp_270x240.png" alt="">
+							</a>
+							<div class="board_thumnail_spec_cols">
+								<a href="#" class="board_spectext_group">
+									<div class="board_spec_label">2인출발 가능한 여행 함께 떠나는</div>
+									<div class="board_spec_main">치앙마이 다색골프 5~6일 #리버데일CC</div>
+									<div class="board_spec_sub_g">
+										<div class="price_num_group">
+											<span class="price_num_value">1,290,000</span>
+											<span class="price_num_unit">원~</span>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="board_thumnail_obj">
+							<a href="#" class="board_thumnail_img_cols">
+								<img src="./images/temp_270x240.png" alt="">
+							</a>
+							<div class="board_thumnail_spec_cols">
+								<a href="#" class="board_spectext_group">
+									<div class="board_spec_label">2인출발 가능한 여행 함께 떠나는</div>
+									<div class="board_spec_main">치앙마이 다색골프 5~6일 #리버데일CC</div>
+									<div class="board_spec_sub_g">
+										<div class="price_num_group">
+											<span class="price_num_value">1,290,000</span>
+											<span class="price_num_unit">원~</span>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+					</li>
+					<li class="nodata_li"><p class="nodata_para">데이터가 없습니다.</p></li>
+				</ul>
+			</div>
+		</section>
+		<!-- // middle -->
+		<!-- footer -->
+		<footer class="footer_wrap">
+			<div class="footer_else_group">
+				<div class="footer_else_row">
+					<p class="footer_else_title">영남세계일주 SNS 공식채널</p>
+					<ul class="footer_sns_list">
+						<li><a href="#" class="sns_item sns_kakao" target="_blank"><span class="hdtext">kakao</span></a></li>
+						<li><a href="#" class="sns_item sns_blog" target="_blank"><span class="hdtext">blog</span></a></li>
+						<li><a href="#" class="sns_item sns_insta" target="_blank"><span class="hdtext">insta</span></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer_menu_group">
+				<ul class="footer_menu_list">
+					<li><a href="#" class="footer_menu">회사소개</a></li>
+					<li><a href="#" class="footer_menu">개인정보취급방침</a></li>
+					<li><a href="#" class="footer_menu">이용약관</a></li>
+					<li><a href="#" class="footer_menu">해외여행약관</a></li>
+				</ul>
+			</div>
+			<div class="footer_main_group">
+				<div class="footer_copyitem_list_wrap">
+					<p class="footer_copymain">(주)영남세계일주</p>
+					<ul class="footer_copyitem_list">
+						<li class="full"><span class="footer_copyitem">대표 : 한상훈</span></li>
+						<li class="full"><span class="footer_copyitem">주소 : 부산광역시 중구 충장대로 7 교보생명빌딩 6층</span></li>
+						<li class="full"><span class="footer_copyitem">대표번호 : 051-715-4488</span></li>
+						<li class="full"><span class="footer_copyitem">팩스 : 051-719-4778</span></li>
+						<li class="full"><span class="footer_copyitem">이메일 : hyemi.park@hanamnc.com</span></li>
+						<li class="full"><span class="footer_copyitem">사업자등록번호 : 134-87-39755 </span></li>
+						<li class="full"><span class="footer_copyitem">통신판매업신고번호 : 제 2022-부산중구-0019호</span></li>
+					</ul>
+				</div>
+				<p class="footer_copyright">Copyright @ (주)영남세계일주.  All Rights Reserved.</p>
+			</div>
+		</footer>
+		<!-- // footer -->
+
+		<script>
+
+			document.addEventListener("DOMContentLoaded",()=>{
+				document.querySelector("#form_map").addEventListener("click",(e)=>{
+					e.preventDefault();
+					showPopup("#modal_where");
+				});
+				segmentBox("#modal_where","#form_map .sortbox_form_item_text");
+
+				document.querySelector("#form_date").addEventListener("click",(e)=>{
+					e.preventDefault();
+					showPopup("#modal_date");
+				});
+				document.querySelector("#btn_start_date_submit").addEventListener("click",(e)=>{
+					e.preventDefault();
+					document.querySelector("#form_date .sortbox_form_item_text").textContent = document.querySelector("#modal_date").getAttribute("data-date");
+				});
+
+				document.querySelector("#form_search").addEventListener("click",(e)=>{
+					e.preventDefault();
+					showPopup("#modal_search");
+				});
+
+				document.querySelector("#form_filter").addEventListener("click",(e)=>{
+					e.preventDefault();
+					showPopup("#modal_filter");
+				});
+				filterTab(); 
+				filterFormFunc();
+			});
+			$(function(){
+                var start_date_div = $("#start_date_div");
+                var date_div_parent = start_date_div.parents(".modal_zone"); 
+                // 픽업 레이어 달력
+                start_date_div.datepicker({
+                    beforeShow: function () {
+                        start_date_div.find(".ui-datepicker-next , .ui-datepicker-prev").addClass("layer_in_control");
+                        parentDateUpdate();
+                    },
+                    onSelect: function () {
+                        start_date_div.find(".ui-datepicker-next , .ui-datepicker-prev").addClass("layer_in_control");
+                        parentDateUpdate();
+                    },
+                    onChangeMonthYear: function () {
+                        start_date_div.find(".ui-datepicker-next , .ui-datepicker-prev").addClass("layer_in_control");
+                        parentDateUpdate();
+                    }
+                });
+                start_date_div.find(".ui-datepicker-next , .ui-datepicker-prev").addClass("layer_in_control");
+                parentDateUpdate();
+                
+
+                function parentDateUpdate(){
+                    var getDate = start_date_div.datepicker("getDate");
+                    var monthText = String(getDate.getMonth()).length == 1 ? `0${getDate.getMonth()+1}` : getDate.getMonth()+1;
+                    var dateText = String(getDate.getDate()).length == 1 ? `0${getDate.getDate()}` : getDate.getDate();
+                    date_div_parent.attr("data-date",getDate.getFullYear()+"-"+monthText+"-"+dateText)
+                }
+            });
+		</script>
+
+		<div class="floating_layer">
+            <div class="floating_items">
+                <ul class="floaging_sns_list">
+                    <li><a href="#" class="sns_quick kakao"><span class="sns_quick_text">채팅상담</span></a></li>
+                </ul>
+            </div>
+        </div>
+
+		<!-- modal -->
+		<div class="modal_zone" id="modal_where">
+			<div class="modal_box_wrap">
+				<div class="dim"></div>
+				<div class="modal_box">
+					<div class="modal_title_row"><h2 class="modal_title">지역선택</h2></div>
+					<div class="modal_content_row">
+						<div class="segment_vitem">
+                            <a href="javascript:;" class="segment_vtitle chk_vtext">일본</a>
+                            <ul class="segment_vlist">
+                                <li><a href="javascript:;" class="segment_text_item chk_vtext">쿠슈/후쿠오카</a></li>
+                                <li><a href="javascript:;" class="segment_text_item chk_vtext">오사카</a></li>
+                                <li><a href="javascript:;" class="segment_text_item chk_vtext">삿포로</a></li>
+                            </ul>
+                        </div>
+                        <div class="segment_vitem">
+                            <a href="javascript:;" class="segment_vtitle chk_vtext">동남아</a>
+                            <ul class="segment_vlist">
+                                <li><a href="javascript:;" class="segment_text_item chk_vtext">싱가포르</a></li>
+                                <li><a href="javascript:;" class="segment_text_item chk_vtext">대만-타이베이</a></li>
+                                <li><a href="javascript:;" class="segment_text_item chk_vtext">베트남-다낭/나트랑</a></li>
+                            </ul>
+                        </div>
+					</div>
+					<div class="modal_btn_row">
+						<a href="#" class="btn_psubmit close_trigger">적용</a>
+					</div>
+					<a href="#" class="btn_modal_close"><span class="hdtext">닫기</span></a>
+				</div>
+			</div>
+		</div>
+		<div class="modal_zone" id="modal_date">
+			<div class="modal_box_wrap">
+				<div class="dim"></div>
+				<div class="modal_box">
+					<div class="modal_title_row"><h2 class="modal_title">출발일선택</h2></div>
+					<div class="modal_content_row">
+						<div class="insert_date_parent" id="start_date_div"></div>
+					</div>
+					<div class="modal_btn_row">
+						<a href="#" class="btn_psubmit close_trigger" id="btn_start_date_submit">적용</a>
+					</div>
+					<a href="#" class="btn_modal_close"><span class="hdtext">닫기</span></a>
+				</div>
+			</div>
+		</div>
+		<div class="modal_zone" id="modal_search">
+			<div class="modal_box_wrap">
+				<div class="dim"></div>
+				<div class="modal_box">
+					<div class="modal_content_row only_cont">
+						<div class="search_field_boxwrap">
+							<p class="search_field_copy">검색어를 입력해주세요</p>
+							<div class="search_field_box">
+								<input type="text" placeholder="상품명을 입력해주세요." class="mv_field_input">
+								<a href="#" class="btn_search_mv_submit"><span class="hdtext">검색</span></a>
+							</div>
+						</div>
+					</div>
+					<a href="#" class="btn_modal_close"><span class="hdtext">닫기</span></a>
+				</div>
+			</div>
+		</div>
+		<div class="modal_zone bottom_sheet" id="modal_filter">
+			<div class="dim"></div>
+			<div class="bottom_sheet_wrap">
+				<div class="bottom_sheet_head">
+					<p class="bottom_sheet_title">
+						<i class="bottom_sheet_ico ico_filter"></i>
+						<span class="bs_title_text">필터</span>
+					</p>
+				</div>
+				<div class="bottom_sheet_cont">
+					<div class="filter_tab_row">
+						<ul class="filter_tab_list">
+							<li><a href="#filter_cont01" class="filter_tab active">출발요일 선택</a></li>
+							<li><a href="#filter_cont02" class="filter_tab">출발지</a></li>
+							<li><a href="#filter_cont03" class="filter_tab">출발시간</a></li>
+							<li><a href="#filter_cont04" class="filter_tab">여행기간</a></li>
+							<li><a href="#filter_cont05" class="filter_tab">가격</a></li>
+						</ul>
+					</div>
+					<div class="filter_form_row">
+						<div class="filter_form_cont active" id="filter_cont01">
+							<div class="filter_form_boxitem_wrap">
+								<ul class="filter_form_boxitem_list">
+									<li><button type="button" class="filter_form_boxitem active">월요일</button></li>
+									<li><button type="button" class="filter_form_boxitem">화요일</button></li>
+									<li><button type="button" class="filter_form_boxitem">수요일</button></li>
+									<li><button type="button" class="filter_form_boxitem">목요일</button></li>
+									<li><button type="button" class="filter_form_boxitem">금요일</button></li>
+									<li><button type="button" class="filter_form_boxitem">토요일</button></li>
+									<li><button type="button" class="filter_form_boxitem">일요일</button></li>
+								</ul>
+							</div>
+						</div>
+						<div class="filter_form_cont" id="filter_cont02">
+							<div class="filter_form_boxitem_wrap">
+								<ul class="filter_form_boxitem_list">
+									<li><button type="button" class="filter_form_boxitem">인천</button></li>
+									<li><button type="button" class="filter_form_boxitem">부산</button></li>
+								</ul>
+							</div>
+						</div>
+						<div class="filter_form_cont" id="filter_cont03">
+							<div class="filter_form_boxitem_wrap">
+								<ul class="filter_form_boxitem_list">
+									<li><button type="button" class="filter_form_boxitem">오전</button></li>
+									<li><button type="button" class="filter_form_boxitem">오후</button></li>
+								</ul>
+							</div>
+						</div>
+						<div class="filter_form_cont" id="filter_cont04">
+							<div class="filter_form_boxitem_wrap">
+								<ul class="filter_form_boxitem_list">
+									<li><button type="button" class="filter_form_boxitem">2일</button></li>
+									<li><button type="button" class="filter_form_boxitem">3일</button></li>
+									<li><button type="button" class="filter_form_boxitem">4일</button></li>
+									<li><button type="button" class="filter_form_boxitem">5일</button></li>
+									<li><button type="button" class="filter_form_boxitem">6일</button></li>
+									<li><button type="button" class="filter_form_boxitem">7일</button></li>
+									<li><button type="button" class="filter_form_boxitem">7일 이상</button></li>
+								</ul>
+							</div>
+						</div>
+						<div class="filter_form_cont" id="filter_cont05">
+							<div class="filter_form_boxitem_wrap">
+								<ul class="filter_form_boxitem_list">
+									<li><button type="button" class="filter_form_boxitem">30~50 만원</button></li>
+									<li><button type="button" class="filter_form_boxitem">50~100 만원</button></li>
+									<li><button type="button" class="filter_form_boxitem">100만원~200만원</button></li>
+									<li><button type="button" class="filter_form_boxitem">200만원~300만원</button></li>
+								</ul>
+							</div>
+							<div class="filter_else_wrap">
+								<p class="filter_else_label">직접입력(만원 단위로 입력)</p>
+								<div class="filter_else_cont">
+									<ul class="form_format_list">
+										<li><input type="text" class="filter_input_item" style="width:150px"></li>
+										<li class="else"><span class="filter_input_elsetext">-</span></li>
+										<li><input type="text" class="filter_input_item" style="width:150px"></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="filter_getdata_row">
+						<ul class="filter_getdata_list">
+							<li><div class="filter_getdata"><span class="getdata_text">월요일</span><button class="btn_getdata_del"></button></div></li>
+							<li><div class="filter_getdata"><span class="getdata_text">인천</span><button class="btn_getdata_del"></button></div></li>
+						</ul>
+					</div>
+					<div class="filter_control_row">
+						<div class="filter_control_cols">
+							<button class="btn_control_box ico_reset"><span class="btn_control_box_text">초기화</span></button>
+						</div>
+						<div class="filter_control_cols">
+							<a href="#" class="btn_quadbox_item ico_allow"><span class="quadbox_item_text"><strong>2</strong>개 상품 보기</span></a>
+						</div>
+					</div>
+				</div>
+				<a href="#" class="btn_modal_close"><span class="hdtext">닫기</span></a>
+			</div>
+		</div>
+		<!-- // modal -->
+	</div>
+</body>
+
+</html>

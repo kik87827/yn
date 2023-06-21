@@ -347,3 +347,51 @@ function tabActiveFunc(target){
 		});
 	})
 }
+
+function filterTab(){
+	const filter_tab = document.querySelectorAll(".filter_tab");
+	const filter_form_cont = document.querySelectorAll(".filter_form_row .filter_form_cont");
+	let filter_tab_active = Array.from(filter_tab).filter(item => item.classList.contains("active"))[0];
+	let filter_form_cont_active = Array.from(filter_form_cont).filter(item => item.classList.contains("active"))[0];
+	filter_tab.forEach((item)=>{
+		item.addEventListener("click",(e)=>{
+			e.preventDefault();
+			const targetItem = e.currentTarget;
+			const targetItemDom = document.querySelector(targetItem.getAttribute("href"));
+			if(filter_tab_active){
+				filter_tab_active.classList.remove("active");
+			}
+			if(filter_form_cont_active){
+				filter_form_cont_active.classList.remove("active");
+			}
+			if(!!targetItemDom){
+				targetItemDom.classList.add("active");
+				filter_form_cont_active = targetItemDom;
+			}
+			targetItem.classList.add("active");
+			filter_tab_active = targetItem;
+		});
+	});
+}
+
+function filterFormFunc(){
+	const targetItem = document.querySelectorAll(".filter_form_boxitem");
+	//let activeItem = Array.from(targetItem).filter(item => item.classList.contains("active"))[0];
+	targetItem.forEach((item)=>{
+		item.addEventListener("click",(e)=>{
+			e.preventDefault();
+			const targetItem = e.currentTarget;
+			const sibilingsItem = targetItem.closest(".filter_form_boxitem_list").querySelectorAll(".filter_form_boxitem");
+			// if(activeItem && targetItem != activeItem){
+			// 	activeItem.classList.remove("active");
+			// }
+			sibilingsItem.forEach((item)=>{
+				if(targetItem != item){
+					item.classList.remove("active");
+				}
+			})
+			targetItem.classList.toggle("active");
+			activeItem = targetItem;
+		});
+	})
+}
