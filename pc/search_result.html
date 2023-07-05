@@ -1,123 +1,128 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="utf-8">
-    <meta name="format-detection" content="telephone=no" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=1280" />
-    <link href="./css/common_c.css" rel="stylesheet"> <!-- 템플릿 사이트 common -->
-    <link href="./css/layout.css" rel="stylesheet">
-    <link href="./css/swiper.min.css" rel="stylesheet">
-    <link href="./css/jqueryui.css" rel="stylesheet">
-    <link href="./css/style.css" rel="stylesheet">
 
-    <script src="./js/moment.min.js"></script>
-    <script src="./js/jquery-3.4.1.min.js"></script>
-    <script src="./js/hoverIntent.js"></script>
-    <script src="./js/swiper.min.js"></script>
-    <script src="./js/daterangepicker.js"></script>
-    <script src="./js/jquery-ui.js"></script>
-    <script src="./js/front.js"></script>
-    <title></title>
+<head>
+	<meta charset="utf-8">
+	<meta name="format-detection" content="telephone=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=1280" />
+	<link href="./css/common_c.css" rel="stylesheet"> <!-- 템플릿 사이트 common -->
+	<link href="./css/layout.css" rel="stylesheet">
+	<link href="./css/swiper.min.css" rel="stylesheet">
+	<link href="./css/jqueryui.css" rel="stylesheet">
+	<link href="./css/style.css" rel="stylesheet">
+
+	<script src="./js/moment.min.js"></script>
+	<script src="./js/jquery-3.4.1.min.js"></script>
+	<script src="./js/hoverIntent.js"></script>
+	<script src="./js/swiper.min.js"></script>
+	<script src="./js/daterangepicker.js"></script>
+	<script src="./js/jquery-ui.js"></script>
+	<script src="./js/front.js"></script>
+	<title></title>
 </head>
+
 <body class="front_body">
-    <div class="page_wrap">
-        <!-- header -->
-        <header class="header_zone">
-            <h1 class="toplogo"><a href="#" class="toplogo_link"></a></h1>
-            <div class="top_main_wrap">
-                <ul class="top_gnb_list">
-                    <li>
-                        <a href="#" class="gnb_one_menu"><span class="gnb_one_menu_text">일본</span></a>
-                        <div class="two_menu_list_wrap">
-                            <ul class="two_menu_list">
-                                <li><a href="#" class="gnb_two_menu">쿠슈/후쿠오카</a></li>
-                                <li><a href="#" class="gnb_two_menu">오사카</a></li>
-                                <li><a href="#" class="gnb_two_menu">삿포로</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="#" class="gnb_one_menu"><span class="gnb_one_menu_text">동남아</span></a>
-                        <div class="two_menu_list_wrap">
-                            <ul class="two_menu_list">
-                                <li><a href="#" class="gnb_two_menu">싱가포르</a></li>
-                                <li><a href="#" class="gnb_two_menu">타이베이</a></li>
-                                <li><a href="#" class="gnb_two_menu">다낭/나트랑</a></li>
-                                <li><a href="#" class="gnb_two_menu">방콕/파타야</a></li>
-                                <li><a href="#" class="gnb_two_menu">세부</a></li>
-                                <li><a href="#" class="gnb_two_menu">보라카이</a></li>
-                                <li><a href="#" class="gnb_two_menu">클락</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="#" class="gnb_one_menu"><span class="gnb_one_menu_text">중국/몽골</span></a>
-                        <div class="two_menu_list_wrap">
-                            <ul class="two_menu_list">
-                                <li><a href="#" class="gnb_two_menu">징가계</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="#" class="gnb_one_menu"><span class="gnb_one_menu_text">대양주</span></a>
-                        <div class="two_menu_list_wrap">
-                            <ul class="two_menu_list">
-                                <li><a href="#" class="gnb_two_menu">괌</a></li>
-                                <li><a href="#" class="gnb_two_menu">호주</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="#" class="gnb_one_menu"><span class="gnb_one_menu_text">골프 투어</span></a>
-                        <div class="two_menu_list_wrap">
-                            <ul class="two_menu_list">
-                                <li><a href="#" class="gnb_two_menu">일본골프</a></li>
-                                <li><a href="#" class="gnb_two_menu">필리핀골프</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="#" class="gnb_one_menu"><span class="gnb_one_menu_text">인천출발</span></a>
-                    </li>
-                    <li>
-                        <a href="#" class="gnb_one_menu"><span class="gnb_one_menu_text">기업/단체문의</span></a>
-                    </li>
-                    <li>
-                        <a href="#" class="gnb_one_menu total_menu"><span class="gnb_one_menu_text">전체메뉴</span></a>
-                        <div class="two_menu_list_wrap">
-                            <ul class="two_menu_list">
-                                <li><a href="#" class="gnb_two_menu">국가별입국정보</a></li>
-                                <li><a href="#" class="gnb_two_menu">공지사항</a></li>
-                                <li><a href="#" class="gnb_two_menu">여행후기</a></li>
-                                <li><a href="#" class="gnb_two_menu">기획전</a></li>
-                                <li><a href="#" class="gnb_two_menu">이벤트</a></li>
-                                <li><a href="#" class="gnb_two_menu">질문과답변</a></li>
-                                <li><a href="#" class="gnb_two_menu">맞춤문의</a></li>
-                                <li><a href="#" class="gnb_two_menu">자주하는질문</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="top_util_wrap">
-                <ul class="head_util_list">
-                    <li><a href="#" class="util_box">로그인</a></li>
-                    <li><a href="#" class="util_text_item ico_men">회원가입</a></li>
-                    <li><a href="#" class="util_text_item">마이페이지</a></li>
-                    <li><a href="#" class="util_text_item">고객센터</a></li>
-                </ul>
-            </div>
-            <div class="head_two_bg"></div>
-        </header>
-        <!-- // header -->
-        <!-- middle -->
-        <section class="middle_zone">
-            <div class="middle_pixin">
-                <div class="middle_title_row"><p class="middle_title">검색</p></div>
-                <div class="middle_search_field_row">
+	<div class="page_wrap">
+		<!-- header -->
+		<header class="header_zone">
+			<h1 class="toplogo"><a href="#" class="toplogo_link"></a></h1>
+			<div class="top_main_wrap">
+				<ul class="top_gnb_list">
+					<li>
+						<a href="#" class="gnb_one_menu"><span class="gnb_one_menu_text">일본</span></a>
+						<div class="two_menu_list_wrap">
+							<ul class="two_menu_list">
+								<li><a href="#" class="gnb_two_menu">쿠슈/후쿠오카</a></li>
+								<li><a href="#" class="gnb_two_menu">오사카</a></li>
+								<li><a href="#" class="gnb_two_menu">삿포로</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="#" class="gnb_one_menu"><span class="gnb_one_menu_text">동남아</span></a>
+						<div class="two_menu_list_wrap">
+							<ul class="two_menu_list">
+								<li><a href="#" class="gnb_two_menu">싱가포르</a></li>
+								<li><a href="#" class="gnb_two_menu">타이베이</a></li>
+								<li><a href="#" class="gnb_two_menu">다낭/나트랑</a></li>
+								<li><a href="#" class="gnb_two_menu">방콕/파타야</a></li>
+								<li><a href="#" class="gnb_two_menu">세부</a></li>
+								<li><a href="#" class="gnb_two_menu">보라카이</a></li>
+								<li><a href="#" class="gnb_two_menu">클락</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="#" class="gnb_one_menu"><span class="gnb_one_menu_text">중국/몽골</span></a>
+						<div class="two_menu_list_wrap">
+							<ul class="two_menu_list">
+								<li><a href="#" class="gnb_two_menu">징가계</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="#" class="gnb_one_menu"><span class="gnb_one_menu_text">대양주</span></a>
+						<div class="two_menu_list_wrap">
+							<ul class="two_menu_list">
+								<li><a href="#" class="gnb_two_menu">괌</a></li>
+								<li><a href="#" class="gnb_two_menu">호주</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="#" class="gnb_one_menu"><span class="gnb_one_menu_text">골프 투어</span></a>
+						<div class="two_menu_list_wrap">
+							<ul class="two_menu_list">
+								<li><a href="#" class="gnb_two_menu">일본골프</a></li>
+								<li><a href="#" class="gnb_two_menu">필리핀골프</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="#" class="gnb_one_menu"><span class="gnb_one_menu_text">인천출발</span></a>
+					</li>
+					<li>
+						<a href="#" class="gnb_one_menu"><span class="gnb_one_menu_text">기업/단체문의</span></a>
+					</li>
+					<li>
+						<a href="#" class="gnb_one_menu total_menu"><span class="gnb_one_menu_text">전체메뉴</span></a>
+						<div class="two_menu_list_wrap">
+							<ul class="two_menu_list">
+								<li><a href="#" class="gnb_two_menu">국가별입국정보</a></li>
+								<li><a href="#" class="gnb_two_menu">공지사항</a></li>
+								<li><a href="#" class="gnb_two_menu">여행후기</a></li>
+								<li><a href="#" class="gnb_two_menu">기획전</a></li>
+								<li><a href="#" class="gnb_two_menu">이벤트</a></li>
+								<li><a href="#" class="gnb_two_menu">질문과답변</a></li>
+								<li><a href="#" class="gnb_two_menu">맞춤문의</a></li>
+								<li><a href="#" class="gnb_two_menu">자주하는질문</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="top_util_wrap">
+				<ul class="head_util_list">
+					<li><a href="#" class="util_box">로그인</a></li>
+					<li><a href="#" class="util_text_item ico_men">회원가입</a></li>
+					<li><a href="#" class="util_text_item">마이페이지</a></li>
+					<li><a href="#" class="util_text_item">고객센터</a></li>
+				</ul>
+			</div>
+			<div class="head_two_bg"></div>
+		</header>
+		<!-- // header -->
+		<!-- middle -->
+		<section class="middle_zone">
+			<div class="middle_pixin">
+				<div class="middle_title_row">
+					<p class="middle_title">검색</p>
+				</div>
+				<div class="middle_search_field_row">
 					<div class="search_field_wrap">
-                        <a href="#" class="search_field_cols define_local" id="local_target" data-poslayer="#layer_box_01">
+						<a href="#" class="search_field_cols define_local" id="local_target"
+							data-poslayer="#layer_box_01">
 							<div class="search_field_form">
 								<div class="search_form_label">지역</div>
 								<div class="search_form_text_g">
@@ -126,7 +131,8 @@
 								</div>
 							</div>
 						</a>
-                        <a href="#" class="search_field_cols define_start" id="start_target" data-poslayer="#layer_box_02">
+						<a href="#" class="search_field_cols define_start" id="start_target"
+							data-poslayer="#layer_box_02">
 							<div class="search_field_form">
 								<div class="search_form_label">출발일</div>
 								<div class="search_form_text_g">
@@ -135,7 +141,7 @@
 								</div>
 							</div>
 						</a>
-                        <div class="search_field_cols define_search">
+						<div class="search_field_cols define_search">
 							<div class="search_field_form">
 								<p class="search_form_label">검색어</p>
 								<div class="search_form_text_g">
@@ -146,12 +152,13 @@
 						<div class="search_field_cols define_btn">
 							<a href="#" class="btn_search_form"><span class="hdtext">검색</span></a>
 						</div>
-                    </div>
-                </div>
-                <div class="middle_list_data_zone">
-                    <div class="board_top_wrap">
+					</div>
+				</div>
+				<div class="middle_list_data_zone">
+					<div class="board_top_wrap">
 						<div class="board_top_cols">
-							<a href="#" class="btn_ico_sort ico_filter" id="filter_target" data-poslayer="#layer_box_filter">
+							<a href="#" class="btn_ico_sort ico_filter" id="filter_target"
+								data-poslayer="#layer_box_filter">
 								<span class="ico_sort_text">필터</span>
 								<span class="ico_sort_count">4</span>
 							</a>
@@ -185,7 +192,7 @@
 							</div>
 						</div>
 						<div class="board_top_cols">
-                            <p class="board_current_para"><strong>10</strong>개 상품</p>
+							<p class="board_current_para"><strong>10</strong>개 상품</p>
 							<div class="boxquad_tab_list">
 								<a href="#" class="boxquad_tab active">추천상품순</a>
 								<a href="#" class="boxquad_tab">낮은가격순</a>
@@ -193,101 +200,138 @@
 							</div>
 						</div>
 					</div>
-                    <div class="board_list_wrap">
-                        <ul class="board_thumnail_list">
+					<div class="board_list_wrap">
+						<ul class="board_thumnail_list">
 							<li>
-                                <div class="board_thumnail_obj">
-                                    <a href="#" class="board_thumnail_img_cols">
+								<div class="board_thumnail_obj">
+									<a href="#" class="board_thumnail_img_cols">
 										<img src="./images/temp_350x240_01.jpg" alt="">
 									</a>
-                                    <div class="board_thumnail_spec_cols">
-                                        <a href="#" class="board_spectext_group">
-                                            <div class="board_spec_title_fxwrap">
-                                                <div class="board_spec_title">[방콕&파타야] #알카자쇼+마사지2시간+코끼리트래킹+오션뷰 5일 인피니티 풀 보유 소 방콕 5일</div>
-                                                <div class="board_spec_else_g">
-                                                    <span class="board_spec_else">상품번호  ATP101</span>
-                                                </div>
-                                            </div>
-                                            <div class="boad_spec_subcopy">아시아 태평양 최고리조트 선정, 초특급 로얄클리프 호텔 또는 동급 투숙</div>
+									<div class="board_thumnail_spec_cols">
+										<a href="#" class="board_spectext_group">
+											<div class="board_spec_title_fxwrap">
+												<div class="board_spec_title">[방콕&파타야] #알카자쇼+마사지2시간+코끼리트래킹+오션뷰 5일 인피니티 풀
+													보유 소 방콕 5일</div>
+												<div class="board_spec_else_g">
+													<span class="board_spec_else">상품번호 ATP101</span>
+												</div>
+											</div>
+											<div class="boad_spec_subcopy">아시아 태평양 최고리조트 선정, 초특급 로얄클리프 호텔 또는 동급 투숙</div>
 											<div class="board_spec_sub_g">
 												<span class="board_spec_price">
-													<span class="price_num">13,399,000</span><span class="unit">원 ~</span>
+													<span class="price_num">13,399,000</span><span class="unit">원
+														~</span>
 												</span>
 											</div>
-                                            <div class="board_summary_tb">
-                                                <div class="board_summary_tr">
-                                                    <div class="board_summary_cell define_th"><span class="board_summary_label"><span class="board_summary_label_text">여행기간</span></span></div>
-                                                    <div class="board_summary_cell deinfe_td">
-                                                        <p class="board_summary_data">5일,6일 / 일, 월, 화, 수, 목, 금, 토 출발</p>
-                                                    </div>
-                                                </div>
-                                                <div class="board_summary_tr">
-                                                    <div class="board_summary_cell define_th"><span class="board_summary_label"><span class="board_summary_label_text">출발기간</span></span></div>
-                                                    <div class="board_summary_cell deinfe_td">
-                                                        <p class="board_summary_data">2023.06.12 ~ 2023.10.31</p>
-                                                    </div>
-                                                </div>
-                                            </div>
+											<div class="board_summary_tb">
+												<div class="board_summary_tr">
+													<div class="board_summary_cell define_th"><span
+															class="board_summary_label"><span
+																class="board_summary_label_text">여행기간</span></span>
+													</div>
+													<div class="board_summary_cell deinfe_td">
+														<p class="board_summary_data">5일,6일 / 일, 월, 화, 수, 목, 금, 토 출발</p>
+													</div>
+												</div>
+												<div class="board_summary_tr">
+													<div class="board_summary_cell define_th"><span
+															class="board_summary_label"><span
+																class="board_summary_label_text">출발기간</span></span>
+													</div>
+													<div class="board_summary_cell deinfe_td">
+														<p class="board_summary_data">2023.06.12 ~ 2023.10.31</p>
+													</div>
+												</div>
+											</div>
 										</a>
-                                        <div class="board_other_group">
+										<div class="board_other_group">
 											<div class="board_other_cols">
 												<ul class="other_company_list">
-                                                    <li>
-                                                        <a href="#" class="other_company_item">
-                                                            <span class="other_company_logo"><img src="images/ico_small_logo01.png" alt=""></span>
-                                                            <span class="other_company_text">제주항공</span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#" class="other_company_item">
-                                                            <span class="other_company_logo"><img src="images/ico_small_logo02.png" alt=""></span>
-                                                            <span class="other_company_text">진에어</span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#" class="other_company_item">
-                                                            <span class="other_company_logo"><img src="images/ico_small_logo03.png" alt=""></span>
-                                                            <span class="other_company_text">아시아나 항공</span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
+													<li>
+														<a href="#" class="other_company_item">
+															<span class="other_company_logo"><img
+																	src="images/ico_small_logo01.png" alt=""></span>
+															<span class="other_company_text">제주항공</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="other_company_item">
+															<span class="other_company_logo"><img
+																	src="images/ico_small_logo02.png" alt=""></span>
+															<span class="other_company_text">진에어</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="other_company_item">
+															<span class="other_company_logo"><img
+																	src="images/ico_small_logo03.png" alt=""></span>
+															<span class="other_company_text">아시아나 항공</span>
+														</a>
+													</li>
+												</ul>
 											</div>
 											<div class="board_other_cols">
-												<a href="#" class="btn_togglebox d_list_option"><span class="btn_togglebox_in">자세히보기</span></a>
+												<a href="#" class="btn_togglebox d_list_option"><span
+														class="btn_togglebox_in">자세히보기</span></a>
 											</div>
 										</div>
-                                    </div>
-                                </div>
-                                <div class="list_option_zone">
+									</div>
+								</div>
+								<div class="list_option_zone">
 									<div class="hor_scroll_calendar_box">
 										<div class="calenar_title_row">
-											<a href="javascript:;" class="btn_calendar_title_control prev_title_control"><span class="hdtext">이전</span></a>
+											<a href="javascript:;"
+												class="btn_calendar_title_control prev_title_control"><span
+													class="hdtext">이전</span></a>
 											<span class="calendar_current">2022.09</span>
-											<a href="javascript:;" class="btn_calendar_title_control next_title_control"><span class="hdtext">다음</span></a>
+											<a href="javascript:;"
+												class="btn_calendar_title_control next_title_control"><span
+													class="hdtext">다음</span></a>
 										</div>
 										<div class="calendar_content_row">
-											<a href="javascript:;" class="btn_calendar_content_control prev_content_control"><span class="hdtext">이전</span></a>
+											<a href="javascript:;"
+												class="btn_calendar_content_control prev_content_control"><span
+													class="hdtext">이전</span></a>
 											<div class="calendar_content">
 												<div class="calendar_week_tr title_row">
-													<div class="calendar_week_cell sun"><span class="calendar_thtext">일</span></div>
-													<div class="calendar_week_cell"><span class="calendar_thtext">월</span></div>
-													<div class="calendar_week_cell"><span class="calendar_thtext">화</span></div>
-													<div class="calendar_week_cell"><span class="calendar_thtext">수</span></div>
-													<div class="calendar_week_cell"><span class="calendar_thtext">목</span></div>
-													<div class="calendar_week_cell"><span class="calendar_thtext">금</span></div>
-													<div class="calendar_week_cell sat"><span class="calendar_thtext">토</span></div>
-													<div class="calendar_week_cell sun"><span class="calendar_thtext">일</span></div>
-													<div class="calendar_week_cell"><span class="calendar_thtext">월</span></div>
-													<div class="calendar_week_cell"><span class="calendar_thtext">화</span></div>
-													<div class="calendar_week_cell"><span class="calendar_thtext">수</span></div>
-													<div class="calendar_week_cell"><span class="calendar_thtext">목</span></div>
-													<div class="calendar_week_cell"><span class="calendar_thtext">금</span></div>
-													<div class="calendar_week_cell sat"><span class="calendar_thtext">토</span></div>
-													<div class="calendar_week_cell sun"><span class="calendar_thtext">일</span></div>
-													<div class="calendar_week_cell"><span class="calendar_thtext">월</span></div>
-													<div class="calendar_week_cell"><span class="calendar_thtext">화</span></div>
-													<div class="calendar_week_cell"><span class="calendar_thtext">수</span></div>
-													<div class="calendar_week_cell"><span class="calendar_thtext">목</span></div>
+													<div class="calendar_week_cell sun"><span
+															class="calendar_thtext">일</span></div>
+													<div class="calendar_week_cell"><span
+															class="calendar_thtext">월</span></div>
+													<div class="calendar_week_cell"><span
+															class="calendar_thtext">화</span></div>
+													<div class="calendar_week_cell"><span
+															class="calendar_thtext">수</span></div>
+													<div class="calendar_week_cell"><span
+															class="calendar_thtext">목</span></div>
+													<div class="calendar_week_cell"><span
+															class="calendar_thtext">금</span></div>
+													<div class="calendar_week_cell sat"><span
+															class="calendar_thtext">토</span></div>
+													<div class="calendar_week_cell sun"><span
+															class="calendar_thtext">일</span></div>
+													<div class="calendar_week_cell"><span
+															class="calendar_thtext">월</span></div>
+													<div class="calendar_week_cell"><span
+															class="calendar_thtext">화</span></div>
+													<div class="calendar_week_cell"><span
+															class="calendar_thtext">수</span></div>
+													<div class="calendar_week_cell"><span
+															class="calendar_thtext">목</span></div>
+													<div class="calendar_week_cell"><span
+															class="calendar_thtext">금</span></div>
+													<div class="calendar_week_cell sat"><span
+															class="calendar_thtext">토</span></div>
+													<div class="calendar_week_cell sun"><span
+															class="calendar_thtext">일</span></div>
+													<div class="calendar_week_cell"><span
+															class="calendar_thtext">월</span></div>
+													<div class="calendar_week_cell"><span
+															class="calendar_thtext">화</span></div>
+													<div class="calendar_week_cell"><span
+															class="calendar_thtext">수</span></div>
+													<div class="calendar_week_cell"><span
+															class="calendar_thtext">목</span></div>
 												</div>
 												<div class="calendar_week_tr content_row">
 													<div class="calendar_week_cell sun">
@@ -360,7 +404,9 @@
 													</div>
 												</div>
 											</div>
-											<a href="javascript:;" class="btn_calendar_content_control next_content_control"><span class="hdtext">다음</span></a>
+											<a href="javascript:;"
+												class="btn_calendar_content_control next_content_control"><span
+													class="hdtext">다음</span></a>
 										</div>
 									</div>
 									<div class="option_top_both">
@@ -380,27 +426,34 @@
 										<ul class="option_thumitem_list">
 											<li>
 												<div class="option_thumitem">
-													<a href="#" class="option_thum"><img src="./images/temp_120x90_01.jpg" alt=""></a>
+													<a href="#" class="option_thum"><img
+															src="./images/temp_120x90_01.jpg" alt=""></a>
 													<a href="#" class="option_spec_group">
-														<div class="option_spec_kind_row"><span class="ing_current_text">예약가능</span></div>
+														<div class="option_spec_kind_row"><span
+																class="ing_current_text">예약가능</span></div>
 														<div class="option_spec_title_row">
-															<div class="option_spec_title">[제주 명문골프] 세인트포 + 오라 C.C 2박3일</div>
+															<div class="option_spec_title">[제주 명문골프] 세인트포 + 오라 C.C 2박3일
+															</div>
 														</div>
 														<div class="option_spec_else_row">
 															<div class="author_logo_wrap">
-																<span class="author_logo"><img src="./images/ico_small_ci.png" alt=""></span>
+																<span class="author_logo"><img
+																		src="./images/ico_small_ci.png" alt=""></span>
 																<span class="author_text">진에어</span>
 															</div>
 															<div class="ico_guidetext ico_calender">
-																<span class="ico_guidetext_initem">2022.09.10(토) 10:10</span>
+																<span class="ico_guidetext_initem">2022.09.10(토)
+																	10:10</span>
 																<span class="ico_guidetext_allow"></span>
-																<span class="ico_guidetext_initem">2022.09.10(토) 10:10</span>
+																<span class="ico_guidetext_initem">2022.09.10(토)
+																	10:10</span>
 															</div>
 														</div>
 													</a>
 													<div class="option_short_group">
 														<span class="board_spec_price">
-															<span class="price_num">499,000</span><span class="unit">원 ~</span>
+															<span class="price_num">499,000</span><span class="unit">원
+																~</span>
 														</span>
 														<a href="#" class="btn_quadobj">상세일정 보기</a>
 													</div>
@@ -408,27 +461,34 @@
 											</li>
 											<li>
 												<div class="option_thumitem">
-													<a href="#" class="option_thum"><img src="./images/temp_120x90_02.jpg" alt=""></a>
+													<a href="#" class="option_thum"><img
+															src="./images/temp_120x90_02.jpg" alt=""></a>
 													<a href="#" class="option_spec_group">
-														<div class="option_spec_kind_row"><span class="ing_current_text">예약가능</span></div>
+														<div class="option_spec_kind_row"><span
+																class="ing_current_text">예약가능</span></div>
 														<div class="option_spec_title_row">
-															<div class="option_spec_title">[제주 명문골프] 세인트포 + 오라 C.C 2박3일</div>
+															<div class="option_spec_title">[제주 명문골프] 세인트포 + 오라 C.C 2박3일
+															</div>
 														</div>
 														<div class="option_spec_else_row">
 															<div class="author_logo_wrap">
-																<span class="author_logo"><img src="images/ico_small_ci.png" alt=""></span>
+																<span class="author_logo"><img
+																		src="images/ico_small_ci.png" alt=""></span>
 																<span class="author_text">진에어</span>
 															</div>
 															<div class="ico_guidetext ico_calender">
-																<span class="ico_guidetext_initem">2022.09.10(토) 10:10</span>
+																<span class="ico_guidetext_initem">2022.09.10(토)
+																	10:10</span>
 																<span class="ico_guidetext_allow"></span>
-																<span class="ico_guidetext_initem">2022.09.10(토) 10:10</span>
+																<span class="ico_guidetext_initem">2022.09.10(토)
+																	10:10</span>
 															</div>
 														</div>
 													</a>
 													<div class="option_short_group">
 														<span class="board_spec_price">
-															<span class="price_num">612,000</span><span class="unit">원 ~</span>
+															<span class="price_num">612,000</span><span class="unit">원
+																~</span>
 														</span>
 														<a href="#" class="btn_quadobj">상세일정 보기</a>
 													</div>
@@ -437,103 +497,141 @@
 										</ul>
 									</div>
 									<div class="option_btn_rows">
-										<a href="#" class="btn_togglebox type2 d_fold_option"><span class="btn_togglebox_in">접기</span></a>
+										<a href="#" class="btn_togglebox type2 d_fold_option"><span
+												class="btn_togglebox_in">접기</span></a>
 									</div>
 								</div>
-                            </li>
+							</li>
 							<li>
-                                <div class="board_thumnail_obj">
-                                    <a href="#" class="board_thumnail_img_cols">
+								<div class="board_thumnail_obj">
+									<a href="#" class="board_thumnail_img_cols">
 										<img src="./images/temp_350x240_01.jpg" alt="">
 									</a>
-                                    <div class="board_thumnail_spec_cols">
-                                        <a href="#" class="board_spectext_group">
-                                            <div class="board_spec_title_fxwrap">
-                                                <div class="board_spec_title">[방콕&파타야] #알카자쇼+마사지2시간+코끼리트래킹+오션뷰 5일 인피니티 풀 보유 소 방콕 5일</div>
-                                                <div class="board_spec_else_g">
-                                                    <span class="board_spec_else">상품번호  ATP101</span>
-                                                </div>
-                                            </div>
-                                            <div class="boad_spec_subcopy">아시아 태평양 최고리조트 선정, 초특급 로얄클리프 호텔 또는 동급 투숙</div>
+									<div class="board_thumnail_spec_cols">
+										<a href="#" class="board_spectext_group">
+											<div class="board_spec_title_fxwrap">
+												<div class="board_spec_title">[방콕&파타야] #알카자쇼+마사지2시간+코끼리트래킹+오션뷰 5일 인피니티 풀
+													보유 소 방콕 5일</div>
+												<div class="board_spec_else_g">
+													<span class="board_spec_else">상품번호 ATP101</span>
+												</div>
+											</div>
+											<div class="boad_spec_subcopy">아시아 태평양 최고리조트 선정, 초특급 로얄클리프 호텔 또는 동급 투숙</div>
 											<div class="board_spec_sub_g">
 												<span class="board_spec_price">
-													<span class="price_num">13,399,000</span><span class="unit">원 ~</span>
+													<span class="price_num">13,399,000</span><span class="unit">원
+														~</span>
 												</span>
 											</div>
-                                            <div class="board_summary_tb">
-                                                <div class="board_summary_tr">
-                                                    <div class="board_summary_cell define_th"><span class="board_summary_label"><span class="board_summary_label_text">여행기간</span></span></div>
-                                                    <div class="board_summary_cell deinfe_td">
-                                                        <p class="board_summary_data">5일,6일 / 일, 월, 화, 수, 목, 금, 토 출발</p>
-                                                    </div>
-                                                </div>
-                                                <div class="board_summary_tr">
-                                                    <div class="board_summary_cell define_th"><span class="board_summary_label"><span class="board_summary_label_text">출발기간</span></span></div>
-                                                    <div class="board_summary_cell deinfe_td">
-                                                        <p class="board_summary_data">2023.06.12 ~ 2023.10.31</p>
-                                                    </div>
-                                                </div>
-                                            </div>
+											<div class="board_summary_tb">
+												<div class="board_summary_tr">
+													<div class="board_summary_cell define_th"><span
+															class="board_summary_label"><span
+																class="board_summary_label_text">여행기간</span></span>
+													</div>
+													<div class="board_summary_cell deinfe_td">
+														<p class="board_summary_data">5일,6일 / 일, 월, 화, 수, 목, 금, 토 출발</p>
+													</div>
+												</div>
+												<div class="board_summary_tr">
+													<div class="board_summary_cell define_th"><span
+															class="board_summary_label"><span
+																class="board_summary_label_text">출발기간</span></span>
+													</div>
+													<div class="board_summary_cell deinfe_td">
+														<p class="board_summary_data">2023.06.12 ~ 2023.10.31</p>
+													</div>
+												</div>
+											</div>
 										</a>
-                                        <div class="board_other_group">
+										<div class="board_other_group">
 											<div class="board_other_cols">
 												<ul class="other_company_list">
-                                                    <li>
-                                                        <a href="#" class="other_company_item">
-                                                            <span class="other_company_logo"><img src="images/ico_small_logo01.png" alt=""></span>
-                                                            <span class="other_company_text">제주항공</span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#" class="other_company_item">
-                                                            <span class="other_company_logo"><img src="images/ico_small_logo02.png" alt=""></span>
-                                                            <span class="other_company_text">진에어</span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#" class="other_company_item">
-                                                            <span class="other_company_logo"><img src="images/ico_small_logo03.png" alt=""></span>
-                                                            <span class="other_company_text">아시아나 항공</span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
+													<li>
+														<a href="#" class="other_company_item">
+															<span class="other_company_logo"><img
+																	src="images/ico_small_logo01.png" alt=""></span>
+															<span class="other_company_text">제주항공</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="other_company_item">
+															<span class="other_company_logo"><img
+																	src="images/ico_small_logo02.png" alt=""></span>
+															<span class="other_company_text">진에어</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="other_company_item">
+															<span class="other_company_logo"><img
+																	src="images/ico_small_logo03.png" alt=""></span>
+															<span class="other_company_text">아시아나 항공</span>
+														</a>
+													</li>
+												</ul>
 											</div>
 											<div class="board_other_cols">
-												<a href="#" class="btn_togglebox d_list_option"><span class="btn_togglebox_in">자세히보기</span></a>
+												<a href="#" class="btn_togglebox d_list_option"><span
+														class="btn_togglebox_in">자세히보기</span></a>
 											</div>
 										</div>
-                                    </div>
-                                </div>
-                                <div class="list_option_zone">
+									</div>
+								</div>
+								<div class="list_option_zone">
 									<div class="hor_scroll_calendar_box">
 										<div class="calenar_title_row">
-											<a href="javascript:;" class="btn_calendar_title_control prev_title_control"><span class="hdtext">이전</span></a>
+											<a href="javascript:;"
+												class="btn_calendar_title_control prev_title_control"><span
+													class="hdtext">이전</span></a>
 											<span class="calendar_current">2022.09</span>
-											<a href="javascript:;" class="btn_calendar_title_control next_title_control"><span class="hdtext">다음</span></a>
+											<a href="javascript:;"
+												class="btn_calendar_title_control next_title_control"><span
+													class="hdtext">다음</span></a>
 										</div>
 										<div class="calendar_content_row">
-											<a href="javascript:;" class="btn_calendar_content_control prev_content_control"><span class="hdtext">이전</span></a>
+											<a href="javascript:;"
+												class="btn_calendar_content_control prev_content_control"><span
+													class="hdtext">이전</span></a>
 											<div class="calendar_content">
 												<div class="calendar_week_tr title_row">
-													<div class="calendar_week_cell sun"><span class="calendar_thtext">일</span></div>
-													<div class="calendar_week_cell"><span class="calendar_thtext">월</span></div>
-													<div class="calendar_week_cell"><span class="calendar_thtext">화</span></div>
-													<div class="calendar_week_cell"><span class="calendar_thtext">수</span></div>
-													<div class="calendar_week_cell"><span class="calendar_thtext">목</span></div>
-													<div class="calendar_week_cell"><span class="calendar_thtext">금</span></div>
-													<div class="calendar_week_cell sat"><span class="calendar_thtext">토</span></div>
-													<div class="calendar_week_cell sun"><span class="calendar_thtext">일</span></div>
-													<div class="calendar_week_cell"><span class="calendar_thtext">월</span></div>
-													<div class="calendar_week_cell"><span class="calendar_thtext">화</span></div>
-													<div class="calendar_week_cell"><span class="calendar_thtext">수</span></div>
-													<div class="calendar_week_cell"><span class="calendar_thtext">목</span></div>
-													<div class="calendar_week_cell"><span class="calendar_thtext">금</span></div>
-													<div class="calendar_week_cell sat"><span class="calendar_thtext">토</span></div>
-													<div class="calendar_week_cell sun"><span class="calendar_thtext">일</span></div>
-													<div class="calendar_week_cell"><span class="calendar_thtext">월</span></div>
-													<div class="calendar_week_cell"><span class="calendar_thtext">화</span></div>
-													<div class="calendar_week_cell"><span class="calendar_thtext">수</span></div>
-													<div class="calendar_week_cell"><span class="calendar_thtext">목</span></div>
+													<div class="calendar_week_cell sun"><span
+															class="calendar_thtext">일</span></div>
+													<div class="calendar_week_cell"><span
+															class="calendar_thtext">월</span></div>
+													<div class="calendar_week_cell"><span
+															class="calendar_thtext">화</span></div>
+													<div class="calendar_week_cell"><span
+															class="calendar_thtext">수</span></div>
+													<div class="calendar_week_cell"><span
+															class="calendar_thtext">목</span></div>
+													<div class="calendar_week_cell"><span
+															class="calendar_thtext">금</span></div>
+													<div class="calendar_week_cell sat"><span
+															class="calendar_thtext">토</span></div>
+													<div class="calendar_week_cell sun"><span
+															class="calendar_thtext">일</span></div>
+													<div class="calendar_week_cell"><span
+															class="calendar_thtext">월</span></div>
+													<div class="calendar_week_cell"><span
+															class="calendar_thtext">화</span></div>
+													<div class="calendar_week_cell"><span
+															class="calendar_thtext">수</span></div>
+													<div class="calendar_week_cell"><span
+															class="calendar_thtext">목</span></div>
+													<div class="calendar_week_cell"><span
+															class="calendar_thtext">금</span></div>
+													<div class="calendar_week_cell sat"><span
+															class="calendar_thtext">토</span></div>
+													<div class="calendar_week_cell sun"><span
+															class="calendar_thtext">일</span></div>
+													<div class="calendar_week_cell"><span
+															class="calendar_thtext">월</span></div>
+													<div class="calendar_week_cell"><span
+															class="calendar_thtext">화</span></div>
+													<div class="calendar_week_cell"><span
+															class="calendar_thtext">수</span></div>
+													<div class="calendar_week_cell"><span
+															class="calendar_thtext">목</span></div>
 												</div>
 												<div class="calendar_week_tr content_row">
 													<div class="calendar_week_cell sun">
@@ -606,7 +704,9 @@
 													</div>
 												</div>
 											</div>
-											<a href="javascript:;" class="btn_calendar_content_control next_content_control"><span class="hdtext">다음</span></a>
+											<a href="javascript:;"
+												class="btn_calendar_content_control next_content_control"><span
+													class="hdtext">다음</span></a>
 										</div>
 									</div>
 									<div class="option_top_both">
@@ -626,27 +726,34 @@
 										<ul class="option_thumitem_list">
 											<li>
 												<div class="option_thumitem">
-													<a href="#" class="option_thum"><img src="./images/temp_120x90_01.jpg" alt=""></a>
+													<a href="#" class="option_thum"><img
+															src="./images/temp_120x90_01.jpg" alt=""></a>
 													<a href="#" class="option_spec_group">
-														<div class="option_spec_kind_row"><span class="ing_current_text">예약가능</span></div>
+														<div class="option_spec_kind_row"><span
+																class="ing_current_text">예약가능</span></div>
 														<div class="option_spec_title_row">
-															<div class="option_spec_title">[제주 명문골프] 세인트포 + 오라 C.C 2박3일</div>
+															<div class="option_spec_title">[제주 명문골프] 세인트포 + 오라 C.C 2박3일
+															</div>
 														</div>
 														<div class="option_spec_else_row">
 															<div class="author_logo_wrap">
-																<span class="author_logo"><img src="./images/ico_small_ci.png" alt=""></span>
+																<span class="author_logo"><img
+																		src="./images/ico_small_ci.png" alt=""></span>
 																<span class="author_text">진에어</span>
 															</div>
 															<div class="ico_guidetext ico_calender">
-																<span class="ico_guidetext_initem">2022.09.10(토) 10:10</span>
+																<span class="ico_guidetext_initem">2022.09.10(토)
+																	10:10</span>
 																<span class="ico_guidetext_allow"></span>
-																<span class="ico_guidetext_initem">2022.09.10(토) 10:10</span>
+																<span class="ico_guidetext_initem">2022.09.10(토)
+																	10:10</span>
 															</div>
 														</div>
 													</a>
 													<div class="option_short_group">
 														<span class="board_spec_price">
-															<span class="price_num">499,000</span><span class="unit">원 ~</span>
+															<span class="price_num">499,000</span><span class="unit">원
+																~</span>
 														</span>
 														<a href="#" class="btn_quadobj">상세일정 보기</a>
 													</div>
@@ -654,27 +761,34 @@
 											</li>
 											<li>
 												<div class="option_thumitem">
-													<a href="#" class="option_thum"><img src="./images/temp_120x90_02.jpg" alt=""></a>
+													<a href="#" class="option_thum"><img
+															src="./images/temp_120x90_02.jpg" alt=""></a>
 													<a href="#" class="option_spec_group">
-														<div class="option_spec_kind_row"><span class="ing_current_text">예약가능</span></div>
+														<div class="option_spec_kind_row"><span
+																class="ing_current_text">예약가능</span></div>
 														<div class="option_spec_title_row">
-															<div class="option_spec_title">[제주 명문골프] 세인트포 + 오라 C.C 2박3일</div>
+															<div class="option_spec_title">[제주 명문골프] 세인트포 + 오라 C.C 2박3일
+															</div>
 														</div>
 														<div class="option_spec_else_row">
 															<div class="author_logo_wrap">
-																<span class="author_logo"><img src="images/ico_small_ci.png" alt=""></span>
+																<span class="author_logo"><img
+																		src="images/ico_small_ci.png" alt=""></span>
 																<span class="author_text">진에어</span>
 															</div>
 															<div class="ico_guidetext ico_calender">
-																<span class="ico_guidetext_initem">2022.09.10(토) 10:10</span>
+																<span class="ico_guidetext_initem">2022.09.10(토)
+																	10:10</span>
 																<span class="ico_guidetext_allow"></span>
-																<span class="ico_guidetext_initem">2022.09.10(토) 10:10</span>
+																<span class="ico_guidetext_initem">2022.09.10(토)
+																	10:10</span>
 															</div>
 														</div>
 													</a>
 													<div class="option_short_group">
 														<span class="board_spec_price">
-															<span class="price_num">612,000</span><span class="unit">원 ~</span>
+															<span class="price_num">612,000</span><span class="unit">원
+																~</span>
 														</span>
 														<a href="#" class="btn_quadobj">상세일정 보기</a>
 													</div>
@@ -683,103 +797,141 @@
 										</ul>
 									</div>
 									<div class="option_btn_rows">
-										<a href="#" class="btn_togglebox type2 d_fold_option"><span class="btn_togglebox_in">접기</span></a>
+										<a href="#" class="btn_togglebox type2 d_fold_option"><span
+												class="btn_togglebox_in">접기</span></a>
 									</div>
 								</div>
-                            </li>
+							</li>
 							<li>
-                                <div class="board_thumnail_obj">
-                                    <a href="#" class="board_thumnail_img_cols">
+								<div class="board_thumnail_obj">
+									<a href="#" class="board_thumnail_img_cols">
 										<img src="./images/temp_350x240_01.jpg" alt="">
 									</a>
-                                    <div class="board_thumnail_spec_cols">
-                                        <a href="#" class="board_spectext_group">
-                                            <div class="board_spec_title_fxwrap">
-                                                <div class="board_spec_title">[방콕&파타야] #알카자쇼+마사지2시간+코끼리트래킹+오션뷰 5일 인피니티 풀 보유 소 방콕 5일</div>
-                                                <div class="board_spec_else_g">
-                                                    <span class="board_spec_else">상품번호  ATP101</span>
-                                                </div>
-                                            </div>
-                                            <div class="boad_spec_subcopy">아시아 태평양 최고리조트 선정, 초특급 로얄클리프 호텔 또는 동급 투숙</div>
+									<div class="board_thumnail_spec_cols">
+										<a href="#" class="board_spectext_group">
+											<div class="board_spec_title_fxwrap">
+												<div class="board_spec_title">[방콕&파타야] #알카자쇼+마사지2시간+코끼리트래킹+오션뷰 5일 인피니티 풀
+													보유 소 방콕 5일</div>
+												<div class="board_spec_else_g">
+													<span class="board_spec_else">상품번호 ATP101</span>
+												</div>
+											</div>
+											<div class="boad_spec_subcopy">아시아 태평양 최고리조트 선정, 초특급 로얄클리프 호텔 또는 동급 투숙</div>
 											<div class="board_spec_sub_g">
 												<span class="board_spec_price">
-													<span class="price_num">13,399,000</span><span class="unit">원 ~</span>
+													<span class="price_num">13,399,000</span><span class="unit">원
+														~</span>
 												</span>
 											</div>
-                                            <div class="board_summary_tb">
-                                                <div class="board_summary_tr">
-                                                    <div class="board_summary_cell define_th"><span class="board_summary_label"><span class="board_summary_label_text">여행기간</span></span></div>
-                                                    <div class="board_summary_cell deinfe_td">
-                                                        <p class="board_summary_data">5일,6일 / 일, 월, 화, 수, 목, 금, 토 출발</p>
-                                                    </div>
-                                                </div>
-                                                <div class="board_summary_tr">
-                                                    <div class="board_summary_cell define_th"><span class="board_summary_label"><span class="board_summary_label_text">출발기간</span></span></div>
-                                                    <div class="board_summary_cell deinfe_td">
-                                                        <p class="board_summary_data">2023.06.12 ~ 2023.10.31</p>
-                                                    </div>
-                                                </div>
-                                            </div>
+											<div class="board_summary_tb">
+												<div class="board_summary_tr">
+													<div class="board_summary_cell define_th"><span
+															class="board_summary_label"><span
+																class="board_summary_label_text">여행기간</span></span>
+													</div>
+													<div class="board_summary_cell deinfe_td">
+														<p class="board_summary_data">5일,6일 / 일, 월, 화, 수, 목, 금, 토 출발</p>
+													</div>
+												</div>
+												<div class="board_summary_tr">
+													<div class="board_summary_cell define_th"><span
+															class="board_summary_label"><span
+																class="board_summary_label_text">출발기간</span></span>
+													</div>
+													<div class="board_summary_cell deinfe_td">
+														<p class="board_summary_data">2023.06.12 ~ 2023.10.31</p>
+													</div>
+												</div>
+											</div>
 										</a>
-                                        <div class="board_other_group">
+										<div class="board_other_group">
 											<div class="board_other_cols">
 												<ul class="other_company_list">
-                                                    <li>
-                                                        <a href="#" class="other_company_item">
-                                                            <span class="other_company_logo"><img src="images/ico_small_logo01.png" alt=""></span>
-                                                            <span class="other_company_text">제주항공</span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#" class="other_company_item">
-                                                            <span class="other_company_logo"><img src="images/ico_small_logo02.png" alt=""></span>
-                                                            <span class="other_company_text">진에어</span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#" class="other_company_item">
-                                                            <span class="other_company_logo"><img src="images/ico_small_logo03.png" alt=""></span>
-                                                            <span class="other_company_text">아시아나 항공</span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
+													<li>
+														<a href="#" class="other_company_item">
+															<span class="other_company_logo"><img
+																	src="images/ico_small_logo01.png" alt=""></span>
+															<span class="other_company_text">제주항공</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="other_company_item">
+															<span class="other_company_logo"><img
+																	src="images/ico_small_logo02.png" alt=""></span>
+															<span class="other_company_text">진에어</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="other_company_item">
+															<span class="other_company_logo"><img
+																	src="images/ico_small_logo03.png" alt=""></span>
+															<span class="other_company_text">아시아나 항공</span>
+														</a>
+													</li>
+												</ul>
 											</div>
 											<div class="board_other_cols">
-												<a href="#" class="btn_togglebox d_list_option"><span class="btn_togglebox_in">자세히보기</span></a>
+												<a href="#" class="btn_togglebox d_list_option"><span
+														class="btn_togglebox_in">자세히보기</span></a>
 											</div>
 										</div>
-                                    </div>
-                                </div>
-                                <div class="list_option_zone">
+									</div>
+								</div>
+								<div class="list_option_zone">
 									<div class="hor_scroll_calendar_box">
 										<div class="calenar_title_row">
-											<a href="javascript:;" class="btn_calendar_title_control prev_title_control"><span class="hdtext">이전</span></a>
+											<a href="javascript:;"
+												class="btn_calendar_title_control prev_title_control"><span
+													class="hdtext">이전</span></a>
 											<span class="calendar_current">2022.09</span>
-											<a href="javascript:;" class="btn_calendar_title_control next_title_control"><span class="hdtext">다음</span></a>
+											<a href="javascript:;"
+												class="btn_calendar_title_control next_title_control"><span
+													class="hdtext">다음</span></a>
 										</div>
 										<div class="calendar_content_row">
-											<a href="javascript:;" class="btn_calendar_content_control prev_content_control"><span class="hdtext">이전</span></a>
+											<a href="javascript:;"
+												class="btn_calendar_content_control prev_content_control"><span
+													class="hdtext">이전</span></a>
 											<div class="calendar_content">
 												<div class="calendar_week_tr title_row">
-													<div class="calendar_week_cell sun"><span class="calendar_thtext">일</span></div>
-													<div class="calendar_week_cell"><span class="calendar_thtext">월</span></div>
-													<div class="calendar_week_cell"><span class="calendar_thtext">화</span></div>
-													<div class="calendar_week_cell"><span class="calendar_thtext">수</span></div>
-													<div class="calendar_week_cell"><span class="calendar_thtext">목</span></div>
-													<div class="calendar_week_cell"><span class="calendar_thtext">금</span></div>
-													<div class="calendar_week_cell sat"><span class="calendar_thtext">토</span></div>
-													<div class="calendar_week_cell sun"><span class="calendar_thtext">일</span></div>
-													<div class="calendar_week_cell"><span class="calendar_thtext">월</span></div>
-													<div class="calendar_week_cell"><span class="calendar_thtext">화</span></div>
-													<div class="calendar_week_cell"><span class="calendar_thtext">수</span></div>
-													<div class="calendar_week_cell"><span class="calendar_thtext">목</span></div>
-													<div class="calendar_week_cell"><span class="calendar_thtext">금</span></div>
-													<div class="calendar_week_cell sat"><span class="calendar_thtext">토</span></div>
-													<div class="calendar_week_cell sun"><span class="calendar_thtext">일</span></div>
-													<div class="calendar_week_cell"><span class="calendar_thtext">월</span></div>
-													<div class="calendar_week_cell"><span class="calendar_thtext">화</span></div>
-													<div class="calendar_week_cell"><span class="calendar_thtext">수</span></div>
-													<div class="calendar_week_cell"><span class="calendar_thtext">목</span></div>
+													<div class="calendar_week_cell sun"><span
+															class="calendar_thtext">일</span></div>
+													<div class="calendar_week_cell"><span
+															class="calendar_thtext">월</span></div>
+													<div class="calendar_week_cell"><span
+															class="calendar_thtext">화</span></div>
+													<div class="calendar_week_cell"><span
+															class="calendar_thtext">수</span></div>
+													<div class="calendar_week_cell"><span
+															class="calendar_thtext">목</span></div>
+													<div class="calendar_week_cell"><span
+															class="calendar_thtext">금</span></div>
+													<div class="calendar_week_cell sat"><span
+															class="calendar_thtext">토</span></div>
+													<div class="calendar_week_cell sun"><span
+															class="calendar_thtext">일</span></div>
+													<div class="calendar_week_cell"><span
+															class="calendar_thtext">월</span></div>
+													<div class="calendar_week_cell"><span
+															class="calendar_thtext">화</span></div>
+													<div class="calendar_week_cell"><span
+															class="calendar_thtext">수</span></div>
+													<div class="calendar_week_cell"><span
+															class="calendar_thtext">목</span></div>
+													<div class="calendar_week_cell"><span
+															class="calendar_thtext">금</span></div>
+													<div class="calendar_week_cell sat"><span
+															class="calendar_thtext">토</span></div>
+													<div class="calendar_week_cell sun"><span
+															class="calendar_thtext">일</span></div>
+													<div class="calendar_week_cell"><span
+															class="calendar_thtext">월</span></div>
+													<div class="calendar_week_cell"><span
+															class="calendar_thtext">화</span></div>
+													<div class="calendar_week_cell"><span
+															class="calendar_thtext">수</span></div>
+													<div class="calendar_week_cell"><span
+															class="calendar_thtext">목</span></div>
 												</div>
 												<div class="calendar_week_tr content_row">
 													<div class="calendar_week_cell sun">
@@ -852,7 +1004,9 @@
 													</div>
 												</div>
 											</div>
-											<a href="javascript:;" class="btn_calendar_content_control next_content_control"><span class="hdtext">다음</span></a>
+											<a href="javascript:;"
+												class="btn_calendar_content_control next_content_control"><span
+													class="hdtext">다음</span></a>
 										</div>
 									</div>
 									<div class="option_top_both">
@@ -872,27 +1026,34 @@
 										<ul class="option_thumitem_list">
 											<li>
 												<div class="option_thumitem">
-													<a href="#" class="option_thum"><img src="./images/temp_120x90_01.jpg" alt=""></a>
+													<a href="#" class="option_thum"><img
+															src="./images/temp_120x90_01.jpg" alt=""></a>
 													<a href="#" class="option_spec_group">
-														<div class="option_spec_kind_row"><span class="ing_current_text">예약가능</span></div>
+														<div class="option_spec_kind_row"><span
+																class="ing_current_text">예약가능</span></div>
 														<div class="option_spec_title_row">
-															<div class="option_spec_title">[제주 명문골프] 세인트포 + 오라 C.C 2박3일</div>
+															<div class="option_spec_title">[제주 명문골프] 세인트포 + 오라 C.C 2박3일
+															</div>
 														</div>
 														<div class="option_spec_else_row">
 															<div class="author_logo_wrap">
-																<span class="author_logo"><img src="./images/ico_small_ci.png" alt=""></span>
+																<span class="author_logo"><img
+																		src="./images/ico_small_ci.png" alt=""></span>
 																<span class="author_text">진에어</span>
 															</div>
 															<div class="ico_guidetext ico_calender">
-																<span class="ico_guidetext_initem">2022.09.10(토) 10:10</span>
+																<span class="ico_guidetext_initem">2022.09.10(토)
+																	10:10</span>
 																<span class="ico_guidetext_allow"></span>
-																<span class="ico_guidetext_initem">2022.09.10(토) 10:10</span>
+																<span class="ico_guidetext_initem">2022.09.10(토)
+																	10:10</span>
 															</div>
 														</div>
 													</a>
 													<div class="option_short_group">
 														<span class="board_spec_price">
-															<span class="price_num">499,000</span><span class="unit">원 ~</span>
+															<span class="price_num">499,000</span><span class="unit">원
+																~</span>
 														</span>
 														<a href="#" class="btn_quadobj">상세일정 보기</a>
 													</div>
@@ -900,27 +1061,34 @@
 											</li>
 											<li>
 												<div class="option_thumitem">
-													<a href="#" class="option_thum"><img src="./images/temp_120x90_02.jpg" alt=""></a>
+													<a href="#" class="option_thum"><img
+															src="./images/temp_120x90_02.jpg" alt=""></a>
 													<a href="#" class="option_spec_group">
-														<div class="option_spec_kind_row"><span class="ing_current_text">예약가능</span></div>
+														<div class="option_spec_kind_row"><span
+																class="ing_current_text">예약가능</span></div>
 														<div class="option_spec_title_row">
-															<div class="option_spec_title">[제주 명문골프] 세인트포 + 오라 C.C 2박3일</div>
+															<div class="option_spec_title">[제주 명문골프] 세인트포 + 오라 C.C 2박3일
+															</div>
 														</div>
 														<div class="option_spec_else_row">
 															<div class="author_logo_wrap">
-																<span class="author_logo"><img src="images/ico_small_ci.png" alt=""></span>
+																<span class="author_logo"><img
+																		src="images/ico_small_ci.png" alt=""></span>
 																<span class="author_text">진에어</span>
 															</div>
 															<div class="ico_guidetext ico_calender">
-																<span class="ico_guidetext_initem">2022.09.10(토) 10:10</span>
+																<span class="ico_guidetext_initem">2022.09.10(토)
+																	10:10</span>
 																<span class="ico_guidetext_allow"></span>
-																<span class="ico_guidetext_initem">2022.09.10(토) 10:10</span>
+																<span class="ico_guidetext_initem">2022.09.10(토)
+																	10:10</span>
 															</div>
 														</div>
 													</a>
 													<div class="option_short_group">
 														<span class="board_spec_price">
-															<span class="price_num">612,000</span><span class="unit">원 ~</span>
+															<span class="price_num">612,000</span><span class="unit">원
+																~</span>
 														</span>
 														<a href="#" class="btn_quadobj">상세일정 보기</a>
 													</div>
@@ -929,27 +1097,28 @@
 										</ul>
 									</div>
 									<div class="option_btn_rows">
-										<a href="#" class="btn_togglebox type2 d_fold_option"><span class="btn_togglebox_in">접기</span></a>
+										<a href="#" class="btn_togglebox type2 d_fold_option"><span
+												class="btn_togglebox_in">접기</span></a>
 									</div>
 								</div>
-                            </li>
-                        </ul>
-                    </div>
-                    <script>
+							</li>
+						</ul>
+					</div>
+					<script>
 						const d_list_option = document.querySelectorAll(".d_list_option");
 						const d_fold_option = document.querySelectorAll(".d_fold_option");
-						d_list_option.forEach((element)=>{
-							element.addEventListener("click", (e)=> {
+						d_list_option.forEach((element) => {
+							element.addEventListener("click", (e) => {
 								e.preventDefault();
 								let thisObj = e.currentTarget;
 								let thisObjParent = thisObj.closest(".board_thumnail_list > li");
 								let thisObjTarget = thisObjParent.querySelector(".list_option_zone");
 								thisObj.classList.toggle("type2");
 								thisObjTarget.classList.toggle("active");
-							},false);
+							}, false);
 						});
 						d_fold_option.forEach((element) => {
-							element.addEventListener("click", (e)=> {
+							element.addEventListener("click", (e) => {
 								e.preventDefault();
 								let thisObj = e.currentTarget;
 								let thisObjParent = thisObj.closest(".board_thumnail_list > li");
@@ -957,7 +1126,7 @@
 								let thisObjCall = thisObjParent.querySelector(".d_list_option");
 								thisObjCall.classList.remove("type2");
 								thisObjTarget.classList.remove("active");
-							},false);
+							}, false);
 						});
 					</script>
 					<!-- paging -->
@@ -978,247 +1147,272 @@
 						<a href="#none" class="control last last_focus"><span class="hdtext">마지막 목록으로 이동</span></a>
 					</div>
 					<!-- // paging -->
-                </div>
-            </div>
-        </section>
-        <!-- // middle -->
-        <div class="floating_layer">
-            <div class="floating_items">
-                <a href="#" class="btn_pagetop"></a>
-                <ul class="floaging_sns_list">
-                    <li><a href="#" class="sns_quick kakao"><span class="sns_quick_text">채팅상담</span></a></li>
-                </ul>
-            </div>
-        </div>
-        <!-- footer -->
-        <footer class="footer_zone">
-            <div class="footer_else_low">
+				</div>
+			</div>
+		</section>
+		<!-- // middle -->
+		<div class="floating_layer">
+			<div class="floating_items">
+				<a href="#" class="btn_pagetop"></a>
+				<ul class="floaging_sns_list">
+					<li><a href="#" class="sns_quick kakao"><span class="sns_quick_text">채팅상담</span></a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- footer -->
+		<footer class="footer_zone">
+			<div class="footer_else_low">
 				<div class="footer_else_pixin">
 					<p class="footer_else_label">영남세계일주 SNS 공식 채널</p>
 					<ul class="footer_sns_list">
-						<li><a href="#" class="sns_item sns_kakao" target="_blank"><span class="hdtext">kakao</span></a></li>
-						<li><a href="#" class="sns_item sns_blog" target="_blank"><span class="hdtext">blog</span></a></li>
-						<li><a href="#" class="sns_item sns_insta" target="_blank"><span class="hdtext">insta</span></a></li>
+						<li><a href="#" class="sns_item sns_kakao" target="_blank"><span class="hdtext">kakao</span></a>
+						</li>
+						<li><a href="#" class="sns_item sns_blog" target="_blank"><span class="hdtext">blog</span></a>
+						</li>
+						<li><a href="#" class="sns_item sns_insta" target="_blank"><span class="hdtext">insta</span></a>
+						</li>
 					</ul>
 				</div>
 			</div>
-            <div class="footer_main_low">
-                <div class="footer_main_pixin">
-                    <ul class="footer_menu_list">
-                        <li><a href="#" class="footer_menu">회사소개</a></li>
-                        <li><a href="#" class="footer_menu">개인정보취급방침</a></li>
-                        <li><a href="#" class="footer_menu">이용약관</a></li>
-                        <li><a href="#" class="footer_menu">해외여행약관</a></li>
-                    </ul>
-                    <div class="footer_main_logo_row">
-                        <span class="footer_main_logo"><img src="images/bottom_logo.png" alt="YN World Tour"></span>
-                    </div>
-                    <div class="footer_copyitem_list_wrap">
-                        <ul class="footer_copyitem_list">
-                            <li><span class="footer_copyitem">상호: (주)영남세계일주</span></li>
-                            <li><span class="footer_copyitem">대표: 한상훈</span></li>
-                        </ul>
-                        <ul class="footer_copyitem_list">
-                            <li><span class="footer_copyitem">주소: 부산광역시 중구 충장대로 7 교보생명빌딩 6층</span></li>
-                            <li><span class="footer_copyitem">대표번호: 051-715-4488</span></li>
-                            <li><span class="footer_copyitem">팩스: 051-719-4778</span></li>
-                        </ul>
-                        <ul class="footer_copyitem_list">
-                            <li><span class="footer_copyitem">이메일: hyemi.park@hanamnc.com</span></li>
-                            <li><span class="footer_copyitem">사업자등록번호: 134-87-39755</span></li>
-                            <li><span class="footer_copyitem">통신판매업신고번호:제 2022-부산중구-0019호</span></li>
-                        </ul>
-                    </div>
-                    <p class="footer_copyright">Copyright @ (주)영남세계일주.  All Rights Reserved.</p>
-                </div>
-            </div>
-        </footer>
-        <!-- // footer -->
+			<div class="footer_main_low">
+				<div class="footer_main_pixin">
+					<ul class="footer_menu_list">
+						<li><a href="#" class="footer_menu">회사소개</a></li>
+						<li><a href="#" class="footer_menu">개인정보취급방침</a></li>
+						<li><a href="#" class="footer_menu">이용약관</a></li>
+						<li><a href="#" class="footer_menu">해외여행약관</a></li>
+					</ul>
+					<div class="footer_main_logo_row">
+						<span class="footer_main_logo"><img src="images/bottom_logo.png" alt="YN World Tour"></span>
+					</div>
+					<div class="footer_copyitem_list_wrap">
+						<ul class="footer_copyitem_list">
+							<li><span class="footer_copyitem">상호: (주)영남세계일주</span></li>
+							<li><span class="footer_copyitem">대표: 한상훈</span></li>
+						</ul>
+						<ul class="footer_copyitem_list">
+							<li><span class="footer_copyitem">주소: 부산광역시 중구 충장대로 7 교보생명빌딩 6층</span></li>
+							<li><span class="footer_copyitem">대표번호: 051-715-4488</span></li>
+							<li><span class="footer_copyitem">팩스: 051-719-4778</span></li>
+						</ul>
+						<ul class="footer_copyitem_list">
+							<li><span class="footer_copyitem">이메일: hyemi.park@hanamnc.com</span></li>
+							<li><span class="footer_copyitem">사업자등록번호: 134-87-39755</span></li>
+							<li><span class="footer_copyitem">통신판매업신고번호:제 2022-부산중구-0019호</span></li>
+						</ul>
+					</div>
+					<p class="footer_copyright">Copyright @ (주)영남세계일주. All Rights Reserved.</p>
+				</div>
+			</div>
+		</footer>
+		<!-- // footer -->
 
-        <!-- layer -->
+		<!-- layer -->
 		<div class="poslayer_z" id="layer_box_01">
-            <div class="poslayer_titlow">
-                <p class="poslayer_tit">지역선택</p>
-            </div>
-            <div class="poslayer_contlow type2">
-                <div class="pcont_w">
-                    <div class="pclayer_scr_w">
-                        <div class="pcv_chk_vitem">
-                            <a href="javascript:;" class="pcv_chk_vtitle">일본</a>
-                            <ul class="pclayer_vlist">
-                                <li><a href="javascript:;" class="pcv_chk">쿠슈/후쿠오카</a></li>
-                                <li><a href="javascript:;" class="pcv_chk">오사카</a></li>
-                                <li><a href="javascript:;" class="pcv_chk">삿포로</a></li>
-                            </ul>
-                        </div>
-                        <div class="pcv_chk_vitem">
-                            <a href="javascript:;" class="pcv_chk_vtitle">동남아</a>
-                            <ul class="pclayer_vlist">
-                                <li><a href="javascript:;" class="pcv_chk">싱가포르</a></li>
-                                <li><a href="javascript:;" class="pcv_chk">대만-타이베이</a></li>
-                                <li><a href="javascript:;" class="pcv_chk">베트남-다낭/나트랑</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="btn_psubmit_w type2">
-                    <a href="#" class="btn_psubmit">적용</a>
-                </div>
-            </div>
-            <button type="button" class="layerclose"><span class="hdtext">닫기</span></button>
-        </div>
-        <div class="poslayer_z wtype2" id="layer_box_02">
-            <div class="poslayer_titlow">
-                <p class="poslayer_tit">출발일 선택</p>
-            </div>
-            <div class="poslayer_contlow">
-                <div class="pcont_w">
-                    <div class="insert_date_parent" id="start_date_div">
+			<div class="poslayer_titlow">
+				<p class="poslayer_tit">지역선택</p>
+			</div>
+			<div class="poslayer_contlow type2">
+				<div class="pcont_w">
+					<div class="pclayer_scr_w">
+						<div class="pcv_chk_vitem">
+							<a href="javascript:;" class="pcv_chk_vtitle">일본</a>
+							<ul class="pclayer_vlist">
+								<li><a href="javascript:;" class="pcv_chk">쿠슈/후쿠오카</a></li>
+								<li><a href="javascript:;" class="pcv_chk">오사카</a></li>
+								<li><a href="javascript:;" class="pcv_chk">삿포로</a></li>
+							</ul>
+						</div>
+						<div class="pcv_chk_vitem">
+							<a href="javascript:;" class="pcv_chk_vtitle">동남아</a>
+							<ul class="pclayer_vlist">
+								<li><a href="javascript:;" class="pcv_chk">싱가포르</a></li>
+								<li><a href="javascript:;" class="pcv_chk">대만-타이베이</a></li>
+								<li><a href="javascript:;" class="pcv_chk">베트남-다낭/나트랑</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="btn_psubmit_w type2">
+					<a href="#" class="btn_psubmit">적용</a>
+				</div>
+			</div>
+			<button type="button" class="layerclose"><span class="hdtext">닫기</span></button>
+		</div>
+		<div class="poslayer_z wtype2" id="layer_box_02">
+			<div class="poslayer_titlow">
+				<p class="poslayer_tit">출발일 선택</p>
+			</div>
+			<div class="poslayer_contlow">
+				<div class="pcont_w">
+					<div class="insert_date_parent" id="start_date_div">
 
 					</div>
-                </div>
-                <div class="btn_psubmit_w">
-                    <a href="#" class="btn_psubmit">적용</a>
-                </div>
-            </div>
-            <button type="button" class="layerclose"><span class="hdtext">닫기</span></button>
-        </div>
-        <div class="poslayer_z wtype3 postype2" id="layer_box_filter">
-            <div class="poslayer_contlow type3 filter_contlow">
-                <div class="filter_tab_row">
-                    <ul class="filter_tab_list">
-                        <li><a href="#filter_cont01" class="filter_tab active">출발요일 선택</a></li>
-                        <li><a href="#filter_cont02" class="filter_tab">출발지</a></li>
-                        <li><a href="#filter_cont03" class="filter_tab">출발시간</a></li>
-                        <li><a href="#filter_cont04" class="filter_tab">여행기간</a></li>
-                        <li><a href="#filter_cont05" class="filter_tab">가격</a></li>
-                    </ul>
-                </div>
-                <div class="filter_form_row">
-                    <div class="filter_form_cont active" id="filter_cont01">
-                        <div class="filter_form_boxitem_wrap">
-                            <ul class="filter_form_boxitem_list">
-                                <li><button type="button" class="filter_form_boxitem active">월요일</button></li>
-                                <li><button type="button" class="filter_form_boxitem">화요일</button></li>
-                                <li><button type="button" class="filter_form_boxitem">수요일</button></li>
-                                <li><button type="button" class="filter_form_boxitem">목요일</button></li>
-                                <li><button type="button" class="filter_form_boxitem">금요일</button></li>
-                                <li><button type="button" class="filter_form_boxitem">토요일</button></li>
-                                <li><button type="button" class="filter_form_boxitem">일요일</button></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="filter_form_cont" id="filter_cont02">
-                        <div class="filter_form_boxitem_wrap">
-                            <ul class="filter_form_boxitem_list">
-                                <li><button type="button" class="filter_form_boxitem">인천</button></li>
-                                <li><button type="button" class="filter_form_boxitem">부산</button></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="filter_form_cont" id="filter_cont03">
-                        <div class="filter_form_boxitem_wrap">
-                            <ul class="filter_form_boxitem_list">
-                                <li><button type="button" class="filter_form_boxitem">오전</button></li>
-                                <li><button type="button" class="filter_form_boxitem">오후</button></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="filter_form_cont" id="filter_cont04">
-                        <div class="filter_form_boxitem_wrap">
-                            <ul class="filter_form_boxitem_list">
-                                <li><button type="button" class="filter_form_boxitem">2일</button></li>
-                                <li><button type="button" class="filter_form_boxitem">3일</button></li>
-                                <li><button type="button" class="filter_form_boxitem">4일</button></li>
-                                <li><button type="button" class="filter_form_boxitem">5일</button></li>
-                                <li><button type="button" class="filter_form_boxitem">6일</button></li>
-                                <li><button type="button" class="filter_form_boxitem">7일</button></li>
-                                <li><button type="button" class="filter_form_boxitem">7일 이상</button></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="filter_form_cont" id="filter_cont05">
-                        <div class="filter_form_boxitem_wrap">
-                            <ul class="filter_form_boxitem_list">
-                                <li><button type="button" class="filter_form_boxitem">30~50 만원</button></li>
-                                <li><button type="button" class="filter_form_boxitem">50~100 만원</button></li>
-                                <li><button type="button" class="filter_form_boxitem">100만원~200만원</button></li>
-                                <li><button type="button" class="filter_form_boxitem">200만원~300만원</button></li>
-                            </ul>
-                        </div>
-                        <div class="filter_else_wrap">
-                            <p class="filter_else_label">직접입력(만원 단위로 입력)</p>
-                            <div class="filter_else_cont">
-                                <ul class="form_format_list">
-                                    <li><input type="text" class="filter_input_item" style="width:150px"></li>
-                                    <li class="else"><span class="filter_input_elsetext">-</span></li>
-                                    <li><input type="text" class="filter_input_item" style="width:150px"></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="filter_result_row">
-                    <div class="filter_getdata_cols">
-                        <ul class="filter_getdata_list">
-                            <li><div class="filter_getdata"><span class="getdata_text">월요일</span><button class="btn_getdata_del"></button></div></li>
-                            <li><div class="filter_getdata"><span class="getdata_text">인천</span><button class="btn_getdata_del"></button></div></li>
-                        </ul>
-                    </div>
-                    <div class="filter_control_cols">
-                        <ul class="filter_control_list">
-                            <li><button class="btn_control_box ico_reset"><span class="btn_control_box_text">초기화</span></button></li>
-                            <li><a href="#" class="btn_quadbox_item ico_allow"><span class="quadbox_item_text">2개 상품 보기</span></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <button type="button" class="layerclose"><span class="hdtext">닫기</span></button>
-        </div>
+				</div>
+				<div class="btn_psubmit_w">
+					<a href="#" class="btn_psubmit">적용</a>
+				</div>
+			</div>
+			<button type="button" class="layerclose"><span class="hdtext">닫기</span></button>
+		</div>
+		<div class="poslayer_z wtype3 postype2" id="layer_box_filter">
+			<div class="poslayer_contlow type3 filter_contlow">
+				<div class="filter_tab_row">
+					<ul class="filter_tab_list">
+						<li><a href="#filter_cont01" class="filter_tab active">출발요일 선택</a></li>
+						<li><a href="#filter_cont02" class="filter_tab">출발지</a></li>
+						<li><a href="#filter_cont03" class="filter_tab">출발시간</a></li>
+						<li><a href="#filter_cont04" class="filter_tab">여행기간</a></li>
+						<li><a href="#filter_cont05" class="filter_tab">가격</a></li>
+					</ul>
+				</div>
+				<div class="filter_form_row">
+					<div class="filter_form_cont active" id="filter_cont01">
+						<div class="filter_form_boxitem_wrap">
+							<ul class="filter_form_boxitem_list">
+								<li><button type="button" class="filter_form_boxitem active">월요일</button></li>
+								<li><button type="button" class="filter_form_boxitem">화요일</button></li>
+								<li><button type="button" class="filter_form_boxitem">수요일</button></li>
+								<li><button type="button" class="filter_form_boxitem">목요일</button></li>
+								<li><button type="button" class="filter_form_boxitem">금요일</button></li>
+								<li><button type="button" class="filter_form_boxitem">토요일</button></li>
+								<li><button type="button" class="filter_form_boxitem">일요일</button></li>
+							</ul>
+						</div>
+					</div>
+					<div class="filter_form_cont" id="filter_cont02">
+						<div class="filter_form_boxitem_wrap">
+							<ul class="filter_form_boxitem_list">
+								<li><button type="button" class="filter_form_boxitem">인천</button></li>
+								<li><button type="button" class="filter_form_boxitem">부산</button></li>
+							</ul>
+						</div>
+					</div>
+					<div class="filter_form_cont" id="filter_cont03">
+						<div class="filter_form_boxitem_wrap">
+							<ul class="filter_form_boxitem_list">
+								<li><button type="button" class="filter_form_boxitem">오전</button></li>
+								<li><button type="button" class="filter_form_boxitem">오후</button></li>
+							</ul>
+						</div>
+					</div>
+					<div class="filter_form_cont" id="filter_cont04">
+						<div class="filter_form_boxitem_wrap">
+							<ul class="filter_form_boxitem_list">
+								<li><button type="button" class="filter_form_boxitem">2일</button></li>
+								<li><button type="button" class="filter_form_boxitem">3일</button></li>
+								<li><button type="button" class="filter_form_boxitem">4일</button></li>
+								<li><button type="button" class="filter_form_boxitem">5일</button></li>
+								<li><button type="button" class="filter_form_boxitem">6일</button></li>
+								<li><button type="button" class="filter_form_boxitem">7일</button></li>
+								<li><button type="button" class="filter_form_boxitem">7일 이상</button></li>
+							</ul>
+						</div>
+					</div>
+					<div class="filter_form_cont" id="filter_cont05">
+						<div class="filter_form_boxitem_wrap">
+							<ul class="filter_form_boxitem_list">
+								<li><button type="button" class="filter_form_boxitem">30~50 만원</button></li>
+								<li><button type="button" class="filter_form_boxitem">50~100 만원</button></li>
+								<li><button type="button" class="filter_form_boxitem">100만원~200만원</button></li>
+								<li><button type="button" class="filter_form_boxitem">200만원~300만원</button></li>
+							</ul>
+						</div>
+						<div class="filter_else_wrap">
+							<p class="filter_else_label">직접입력(만원 단위로 입력)</p>
+							<div class="filter_else_cont">
+								<ul class="form_format_list">
+									<li><input type="text" class="filter_input_item" style="width:150px"></li>
+									<li class="else"><span class="filter_input_elsetext">-</span></li>
+									<li><input type="text" class="filter_input_item" style="width:150px"></li>
+									<!-- 230706 추가 -->
+									<li class="has_btn"><button type="button" class="btn_filter_item">확인</button></li>
+									<!-- // 230706 추가 -->
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="filter_result_row">
+					<div class="filter_getdata_cols">
+						<ul class="filter_getdata_list">
+							<li>
+								<div class="filter_getdata">
+									<span class="getdata_text">월요일</span>
+									<button class="btn_getdata_del"></button>
+								</div>
+							</li>
+							<li>
+								<div class="filter_getdata">
+									<span class="getdata_text">인천</span>
+									<button class="btn_getdata_del"></button>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="filter_control_cols">
+						<ul class="filter_control_list">
+							<li>
+								<button class="btn_control_box ico_reset">
+									<span class="btn_control_box_text">초기화</span>
+								</button>
+							</li>
+							<li>
+								<a href="#" class="btn_quadbox_item ico_allow">
+									<span class="quadbox_item_text">2개 상품 보기</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<button type="button" class="layerclose"><span class="hdtext">닫기</span></button>
+		</div>
 		<!-- // layer -->
 
-        <!-- main script -->
-        <script>
-            document.addEventListener("DOMContentLoaded",() => {
-                filterTab(); 
+		<!-- main script -->
+		<script>
+			document.addEventListener("DOMContentLoaded", () => {
+				filterTab();
 				filterFormFunc();
-            });
+			});
 
-            $(function(){
-                var start_date_div = $("#start_date_div");
-                var date_div_parent = start_date_div.parents(".poslayer_z"); 
-                // 픽업 레이어 달력
-                start_date_div.datepicker({
-                    beforeShow: function () {
-                        start_date_div.find(".ui-datepicker-next , .ui-datepicker-prev").addClass("layer_in_control");
-                        parentDateUpdate();
-                    },
-                    onSelect: function () {
-                        start_date_div.find(".ui-datepicker-next , .ui-datepicker-prev").addClass("layer_in_control");
-                        parentDateUpdate();
-                    },
-                    onChangeMonthYear: function () {
-                        start_date_div.find(".ui-datepicker-next , .ui-datepicker-prev").addClass("layer_in_control");
-                        parentDateUpdate();
-                    }
-                });
-                start_date_div.find(".ui-datepicker-next , .ui-datepicker-prev").addClass("layer_in_control");
-                parentDateUpdate();
-                
+			$(function () {
+				var start_date_div = $("#start_date_div");
+				var date_div_parent = start_date_div.parents(".poslayer_z");
+				// 픽업 레이어 달력
+				start_date_div.datepicker({
+					beforeShow: function () {
+						start_date_div.find(".ui-datepicker-next , .ui-datepicker-prev").addClass("layer_in_control");
+						parentDateUpdate();
+					},
+					onSelect: function () {
+						start_date_div.find(".ui-datepicker-next , .ui-datepicker-prev").addClass("layer_in_control");
+						parentDateUpdate();
+					},
+					onChangeMonthYear: function () {
+						start_date_div.find(".ui-datepicker-next , .ui-datepicker-prev").addClass("layer_in_control");
+						parentDateUpdate();
+					}
+				});
+				start_date_div.find(".ui-datepicker-next , .ui-datepicker-prev").addClass("layer_in_control");
+				parentDateUpdate();
 
-                function parentDateUpdate(){
-                    var getDate = start_date_div.datepicker("getDate");
-                    var monthText = String(getDate.getMonth()).length == 1 ? `0${getDate.getMonth()+1}` : getDate.getMonth()+1;
-                    var dateText = String(getDate.getDate()).length == 1 ? `0${getDate.getDate()}` : getDate.getDate();
-                    date_div_parent.attr("data-date",getDate.getFullYear()+"-"+monthText+"-"+dateText)
-                }
-            })
-            
-            window.addEventListener("load",() => {
-                
-            });
-        </script>
-        <!-- // main script -->
-    </div>
+
+				function parentDateUpdate() {
+					var getDate = start_date_div.datepicker("getDate");
+					var monthText = String(getDate.getMonth()).length == 1 ? `0${getDate.getMonth() + 1}` : getDate.getMonth() + 1;
+					var dateText = String(getDate.getDate()).length == 1 ? `0${getDate.getDate()}` : getDate.getDate();
+					date_div_parent.attr("data-date", getDate.getFullYear() + "-" + monthText + "-" + dateText)
+				}
+			})
+
+			window.addEventListener("load", () => {
+
+			});
+		</script>
+		<!-- // main script -->
+	</div>
 </body>
+
 </html>

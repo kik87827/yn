@@ -266,16 +266,37 @@ input.mv_field_input{outline:0;flex:1;min-width:0;border:0;padding:10px 0 10px 1
 .filter_form_cont.active{display:block;}
 .filter_form_boxitem_wrap{}
 .filter_form_boxitem_list{display:flex;flex-wrap:wrap;gap:8px 0;margin:0 -4px;}
-.filter_form_boxitem_list > li{flex:0 0 33.3333333333%;width:33.3333333333%;box-sizing: border-box;padding:0 4px;}
+.filter_form_boxitem_list > li{flex:0 0 33.3333333333%;box-sizing: border-box;padding:0 4px;}
 .filter_form_boxitem_list > li:last-of-type{}
-.filter_form_boxitem{display:block;width:100%;font-family: 'Noto Sans KR';font-size:14px;color:#4e4e4e;border:1px solid #ccc;border-radius:100px;line-height:1.3;padding:8px 10px 9px;box-sizing: border-box;text-align: center;}
+.filter_form_boxitem{display:block;width:100%;word-break:break-all;font-family: 'Noto Sans KR';font-size:14px;color:#4e4e4e;border:1px solid #ccc;border-radius:100px;line-height:1.3;padding:8px 10px 9px;box-sizing: border-box;text-align: center;}
 .filter_form_boxitem.active{color:#02dfde;border-color:#02dfde;font-weight:500;}
 .filter_else_wrap{margin-top:28px;}
 .filter_else_label{font-size:16px;color:#4e4e4e;margin-bottom:18px;}
 .filter_else_cont{}
+.form_format_wrap{}
+.form_format_btn_row{margin-top:10px;}
+.btn_filter_item{width:100%;}
 .form_format_list{display:flex;align-items: center;}
-.form_format_list > li{}
-.form_format_list > li.else{padding:0 10px;}
+.form_format_list > li{flex:1;}
+.form_format_list > li.else{flex:0;white-space:nowrap;padding:0 10px;}
+.form_format_list > li.has_btn{padding:0 0 0 10px}
+.btn_filter_item{
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 48px;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1;
+    border: 1px solid #7e7e7e;
+    border-radius: 8px;
+    padding: 10px 10px 11px;
+    min-width: 110px;
+    box-sizing: border-box;
+	font-family:'Noto Sans KR';
+}
+
 input.filter_input_item{font-family: 'Noto Sans KR';border:1px solid #d4d4d4;height:48px;border-radius:8px;line-height:1;box-sizing: border-box;width:100%;box-sizing: border-box;padding:0 15px;}
 .filter_input_elsetext{}
 .filter_result_row{border-top:1px solid #e7e7e7;padding:20px 0 25px;display: flex;align-items: center;justify-content: space-between;}

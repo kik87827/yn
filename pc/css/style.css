@@ -501,6 +501,23 @@ input.mv_form_input::input-placeholder{color:#fff;}
 .form_format_list{display:flex;align-items: center;}
 .form_format_list > li{}
 .form_format_list > li.else{padding:0 10px;}
+.form_format_list > li.has_btn{padding:0 0 0 10px}
+.btn_filter_item{
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 48px;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1;
+    border: 1px solid #7e7e7e;
+    border-radius: 8px;
+    padding: 10px 10px 11px;
+    min-width: 110px;
+    box-sizing: border-box;
+	font-family:'Noto Sans KR';
+}
 input.filter_input_item{font-family: 'Noto Sans KR';border:1px solid #d4d4d4;height:48px;border-radius:8px;line-height:1;box-sizing: border-box;width:100%;box-sizing: border-box;padding:0 15px;}
 .filter_input_elsetext{}
 .filter_result_row{border-top:1px solid #e7e7e7;padding:20px 0 25px;display: flex;align-items: center;justify-content: space-between;}
