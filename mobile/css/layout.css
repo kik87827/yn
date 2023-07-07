@@ -18,7 +18,8 @@
     font-style: normal;
     font-weight: 400;
     src: local('Noto Sans KR'),
-        url('./webfont/NotoSans-Regular.woff') format('woff');
+    url('./webfont/NotoSans-Regular.woff2') format('woff'),
+    url('./webfont/NotoSans-Regular.woff') format('woff');
 }
 @font-face {
     font-family: 'Noto Sans KR';
