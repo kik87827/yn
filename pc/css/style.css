@@ -94,6 +94,7 @@ input.mv_form_input::input-placeholder{color:#fff;}
 
 .mc_vitem.tapebanner_vitem{margin-top:90px;}
 .swiper-container.mc_banner_swiper{}
+.swiper-container.mc_banner_swiper img{max-width:100%;width:100%;}
 .swiper-container.mc_banner_swiper .swiper-pagination.mc_paging{position:absolute;bottom:15px;top:auto;left:0;}
 
 .mc_ctab_wrap{}

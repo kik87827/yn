@@ -76,7 +76,7 @@ input.mv_form_input::input-placeholder{color:#fff;}
 .mc_vitem_title_wp.has_highlight .highlight{position:relative;z-index:2;}
 
 /* mcbanner */
-.mc_banner_container img{max-width: 100%;vertical-align: top;}
+.mc_banner_container img{max-width: 100%;vertical-align: top;width:100%;}
 .mc_banner_container .swiper-pagination.mc-pagination{position:absolute;top:auto;bottom:10px;}
 
 /* mc_thumbanner */
