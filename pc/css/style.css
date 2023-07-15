@@ -92,6 +92,10 @@ input.mv_form_input::input-placeholder{color:#fff;}
 .mc_content_toplayer{position:absolute;top:0;left:0;width:100%;transform: translateY(-50%);}
 .mc_content_bottomlayer{position:absolute;bottom:0;left:0;width:100%;transform: translateY(50%);}
 
+.mc_vitem.tapebanner_vitem{margin-top:90px;}
+.swiper-container.mc_banner_swiper{}
+.swiper-container.mc_banner_swiper .swiper-pagination.mc_paging{position:absolute;bottom:15px;top:auto;left:0;}
+
 .mc_ctab_wrap{}
 .mc_ctab_list{display:flex;justify-content: center;gap:6px;}
 .mc_ctab_list > li{}

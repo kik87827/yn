@@ -349,6 +349,24 @@ function mc_swiper2_func(){
 	}
 }
 
+var mc_banner_obj = null;
+function mc_banner_func(){
+	const mc_banner_swiper = document.querySelector(".mc_banner_swiper");
+	const mc_banner_slide = mc_banner_swiper.querySelectorAll(".swiper-slide");
+	if(mc_banner_slide.length>1){
+		mc_banner_obj = new Swiper('.mc_banner_swiper', { 
+			speed : 1000, 
+			loop : true, 
+			pagination: {  
+				el: ".mc_banner_swiper .mc_paging",
+				clickable: true
+			}
+		})
+	}else{
+		mc_banner_swiper.classList.add("nodata_type");
+	}
+}
+
 
 function mcTabFunc(){
 	const mc_ctab = document.querySelectorAll(".mc_ctab");

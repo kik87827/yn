@@ -314,6 +314,23 @@ function mcEmerPro(){
 	}
 }
 
+function mcBannerPro(){
+	let data_container_slide = document.querySelectorAll(".mc_banner_container .swiper-slide");
+	let data_swiper_obj = null;
+	if(data_swiper_obj !== null){
+		data_swiper_obj.update();
+	}else{
+		if(data_container_slide.length>1){
+			data_swiper_obj = new Swiper(".mc_banner_container", {
+				speed : 1000,
+				pagination: {
+					el: '.mc_banner_container .mc-pagination',
+				}
+			});
+		}
+	}
+}
+
 function mcTabFlow(){
 	let data_container_slide = document.querySelectorAll(".mctab_container .swiper-slide");
 	let data_swiper_obj = null;
