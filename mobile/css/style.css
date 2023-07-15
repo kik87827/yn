@@ -374,6 +374,9 @@ input.filter_input_item{font-family: 'Noto Sans KR';border:1px solid #d4d4d4;hei
 .sort_result_quad.ico_moon:before{width:13.5px;height:14.5px;background-image:url("../images/ico_sort_result_02.png");}
 .sort_result_quad.ico_map:before{width:11px;height:16.5px;background-image:url("../images/ico_sort_result_03.png");}
 .sort_result_quad.ico_pay:before{width:13.5px;height:12.5px;background-image:url("../images/ico_sort_result_04.png");}
+.sort_result_quad.ico_time:before{width:15px;height:15px;background-image:url("../images/ico_sort_result_05.png");margin-right:-1px;}
+
+.sort_result_quad.ico_time + .sort_result_text{margin-left:5px;}
 .sort_result_text{white-space: nowrap;font-size:13px;color:#2b2b2b;font-weight:500;margin-left:7px;line-height:1;position:relative;top:-1px;}
 .btn_sort_result_del{display:inline-block;width:20px;height:20px;margin-left:3px;position:relative;top:-1px;}
 .btn_sort_result_del:before,

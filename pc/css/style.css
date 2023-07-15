@@ -271,9 +271,10 @@ input.mv_form_input::input-placeholder{color:#fff;}
 .sort_result_text{font-size:15px;color:#2b2b2b;line-height:1;display:inline-block;margin-left:5px;position:relative;top:1px;}
 .sort_result_quad:before{display:block;content:'';width:20px;height:20px;background:url("../images/ico_filter_result.png") no-repeat 0 0/100% auto;}
 .sort_result_quad.ico_calendar:before{}
-.sort_result_quad.ico_moon:before{background-position:0 33.33333333%;}
-.sort_result_quad.ico_map:before{background-position:0 66.666666666%;}
-.sort_result_quad.ico_pay:before{background-position:0 100%;}
+.sort_result_quad.ico_moon:before{background-position:0 25%;}
+.sort_result_quad.ico_map:before{background-position:0 50%;}
+.sort_result_quad.ico_pay:before{background-position:0 75%;}
+.sort_result_quad.ico_time:before{background-position:0 100%;}
 .btn_sort_result_del{display:inline-block;width:15px;height:15px;margin-left:10px;position:relative;}
 .btn_sort_result_del:before,
 .btn_sort_result_del:after{display:block;content:'';width:12px;height:1px;background:#777;position:absolute;top:50%;left:50%;margin:0 0 0 -6px;}
