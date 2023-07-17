@@ -325,7 +325,11 @@ function mcBannerPro(){
 				speed : 1000,
 				pagination: {
 					el: '.mc_banner_container .mc-pagination',
-				}
+				},
+				autoplay: {
+					delay: 5000,
+					disableOnInteraction: false
+				},
 			});
 		}
 	}

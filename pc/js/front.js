@@ -360,7 +360,11 @@ function mc_banner_func(){
 			pagination: {  
 				el: ".mc_banner_swiper .mc_paging",
 				clickable: true
-			}
+			},
+			autoplay: {
+				delay: 5000,
+				disableOnInteraction: false
+			},
 		})
 	}else{
 		mc_banner_swiper.classList.add("nodata_type");
